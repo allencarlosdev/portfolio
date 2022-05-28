@@ -15,10 +15,8 @@ export default {
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #fbd758;
+  font-family: var(--font);
+  background: var(--background-body);
+  color: var(--letter-color);
 }
 </style>

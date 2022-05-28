@@ -1,0 +1,26 @@
+/*                                     Author: Ing Carlos Allen                                   */
+/*                                   https://github.com/allencarlosdev                           */
+/*                                 contact : allencarlosDev@gmail.com                           */
+
+/* color var */
+:root {
+    --background-body: #000;
+    --letter-color:#fbd758;
+    --font: 'Bebas Neue', sans-serif;
+
+
+    /* z-index - variables */
+    --z-index10: 10;
+    --z-index20: 20;
+    --z-index30: 30;
+    --z-index40: 40;
+    --z-index50: 50;
+    --z-index60: 60;
+    --z-index70: 70;
+    --z-index80: 80;
+    --z-index90: 90;
+}
+
+body {
+    background-color: var(--background-body);
+}
