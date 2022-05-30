@@ -34,7 +34,7 @@
     .header {
         width: 100%;
         height: 80px;
-        background-color: var(--background-body);
+        /* background-color: var(--background-body); */
         position: relative;
     }
 

@@ -7,6 +7,7 @@
     --background-body: #000;
     --letter-color:#fbd758;
     --font: 'Bebas Neue', sans-serif;
+    --background-footer:rgba(69, 69, 69, 0.2);
 
 
     /* z-index - variables */
@@ -22,5 +23,9 @@
 }
 
 body {
-    background-color: var(--background-body);
+    /* background-color: var(--background-body); */
+    background: radial-gradient(ellipse, rgb(39, 39, 39) 0%, rgba(0, 0, 0, 1) 100%);
+    position: relative;
+    padding-bottom: 3rem;
+    min-height: 100vh;
 }

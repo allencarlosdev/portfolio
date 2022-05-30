@@ -13,9 +13,9 @@
 </script>
 
 <style scoped>
-    .nav {
+    /* .nav {
         background-color: blanchedalmond;
-    }
+    } */
 
     .nav__link {
         font-weight: bold;
