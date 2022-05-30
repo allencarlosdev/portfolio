@@ -13,9 +13,11 @@
 </script>
 
 <style scoped>
-    /* .nav {
-        background-color: blanchedalmond;
-    } */
+    .nav {
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
 
     .nav__link {
         font-weight: bold;

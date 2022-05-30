@@ -23,7 +23,6 @@
 }
 
 body {
-    /* background-color: var(--background-body); */
     background: radial-gradient(ellipse, rgb(39, 39, 39) 0%, rgba(0, 0, 0, 1) 100%);
     position: relative;
     padding-bottom: 3rem;

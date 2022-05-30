@@ -1,13 +1,21 @@
 <template>
-  <div class="home">
-    <h1>Home page</h1>
-  </div>
+    <div class="home">
+        <h1>HomeView</h1>
+    </div>
 </template>
 
 <script>
-
-
-export default {
-  name: 'HomeView',
-}
+    export default {
+        
+    }
 </script>
+
+<style scoped>
+    .home {
+        display: flex;
+        background-color: red;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 80px;
+    }
+</style>

@@ -52,11 +52,7 @@
     }
 
     .button-cv {
-        display: flex;
-        color: var(--background-body);
-        transition: .4s ease-in-out all;
-        left: 40%;
-        
+        color: var(--background-body);      
     }
 
     .fa-circle-down, .fa-house-chimney {
