@@ -1,14 +1,14 @@
 <template>
     <footer class="footer">
         <div class="download-cv">
-            <a class="button-cv"><i class="fa-solid fa-circle-down"></i>Download CV</a>
+            <router-link to="/portfolio" class="nav__link"><i class="fa-solid fa-circle-down"></i>Download CV</router-link>
         </div>
         <div class="contact-email">
             <p class="contact-email__p"><i class="fa-solid fa-envelope"></i> allencarlosdev@gmail.com </p>
         </div>
 
         <div class="button-home">
-            <a class="button-cv"><i class="fa-solid fa-house-chimney"></i>Home</a>
+            <router-link to="/" class="nav__link"><i class="fa-solid fa-house-chimney"></i>Home</router-link>
         </div>
 
     </footer>
@@ -48,10 +48,10 @@
 
     .download-cv:hover{
         transition: .5s;
-        box-shadow: 0 0 5px var(--letter-color), 0 0 10px var(--letter-color), 0 0 20px var(--letter-color);
+        background:linear-gradient(var(--letter-color), var(--letter-gradient));
     }
 
-    .button-cv {
+    .nav__link {
         color: var(--background-body);      
     }
 
@@ -74,7 +74,7 @@
 
     .button-home:hover {
         transition: .5s;
-        box-shadow: 0 0 5px var(--letter-color), 0 0 10px var(--letter-color), 0 0 20px var(--letter-color);
+        background:linear-gradient(var(--letter-color), var(--letter-gradient));
     }
 
 </style>
