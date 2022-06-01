@@ -1,6 +1,15 @@
 <template>
-    <div class="home">
-        <div class="name-title">
+    <!-- <div>
+
+        <h3> Voy a dejar este mensaje aqui hasta el 10 de junio (como prueba de que no me copie :)) - aqui probando mis variables para la animacion del title</h3>
+        <h1> x: {{x}}</h1>
+        <h1> width: {{halfScreen}}</h1>
+        <h1> result: {{result}}</h1>
+        <h1> translateX: {{translateX}}</h1>
+    </div> -->
+    <div class="home" @mousemove="mouseMove">
+        <!-- <div class="name-title" :style="{transform:`translate(${x})`, transition:'all 3s'}"> -->
+        <div class="name-title" :style="style">
             <h1 class="name-title__carlos">CARLOS ALLEN</h1>
             <P class="name-title__dev">FULLSTACK</P>
         </div>
@@ -8,7 +17,8 @@
             <img src="../assets/carlosallen.svg" alt="">
         </div>
 
-        <div class="name-title--front">
+        <!-- <div class="name-title--front" :style="{transform:`translate(${x})`, transition:'all 3s'}"> -->
+        <div class="name-title--front" :style="style">
             <h1 class="name-title__carlos--front">CARLOS ALLEN</h1>
             <P class="name-title__dev--front">FULLSTACK</P>
         </div>
@@ -28,12 +38,33 @@
         data (){
             return {
                 move:false,
+                x:'',
+                y:'',
+                halfScreen:'',
+                result:'',
+                translateX:'',
+                style:{
+                    transform:'',
+                    transition:'all 4s',
+                }
             }
         },
         methods: {
             setMove(value){
                 this.move = value;
-            }
+            },
+            mouseMove(e) {
+                this.x =e.clientX/16;
+                this.halfScreen= window.innerWidth/32;
+                this.translateX =this.x-this.halfScreen+'px';
+
+                if (this.x >= this.halfScreen) {
+                    this.result = this.translateX;
+                } else {
+                    this.result = this.translateX;
+                }
+                this.style.transform = `translate(${this.translateX})`
+            },
         }
     }
 </script>
@@ -55,6 +86,7 @@
         position: absolute;
         z-index: var(--z-index60);
         line-height: 20vh;
+        /* transform:translate(100px); */
     }
     .name-title__carlos {
         font-size: 12vw;
