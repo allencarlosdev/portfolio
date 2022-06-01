@@ -12,12 +12,29 @@
             <h1 class="name-title__carlos--front">CARLOS ALLEN</h1>
             <P class="name-title__dev--front">FULLSTACK</P>
         </div>
+        <div class="button">
+            <router-link to="/portfolio" class="button__portfolio" @mouseover="setMove(true)" @mouseout="setMove(false)">
+                <span v-if="move!=true" :class="{'button__line':(move ===false)}"></span>
+                <span class="button__span button__span--n1"></span>
+                    Portfolio
+            </router-link>
+        </div>
     </div>
 </template>
 
 <script>
     export default {
-        
+        name:'HomeView',
+        data (){
+            return {
+                move:false,
+            }
+        },
+        methods: {
+            setMove(value){
+                this.move = value;
+            }
+        }
     }
 </script>
 
@@ -32,34 +49,42 @@
         margin-bottom: 80px;
     }
 
+    /* Title of the back */
+
     .name-title{
         position: absolute;
         z-index: var(--z-index60);
-        line-height: 9vw;
+        line-height: 20vh;
     }
     .name-title__carlos {
-        font-size: 20vh;
+        font-size: 12vw;
         font-weight: 600;
     }
     .name-title__dev {
         text-align: center;
         font-weight: 600;
-        font-size: 15vh;
+        font-size: 9vw;
     }
+
+    /* Image of me (carlos xD) */
+
     .image-carlos {
         position: absolute;
+        bottom:12vh;
         width: 30vw;
         z-index: var(--z-index70);
     }
     
+    /* Title of the front */
+
     .name-title--front {
         position: absolute;
         z-index: var(--z-index80);
-        line-height: 9vw;
+        line-height: 20vh;
     }
 
     .name-title__carlos--front {
-        font-size: 20vh;
+        font-size: 12vw;
         font-weight: 600;
         -webkit-text-fill-color: transparent;
         -webkit-text-stroke: 1px;
@@ -67,8 +92,89 @@
     .name-title__dev--front {
         text-align: center;
         font-weight: 600;
-        font-size: 15vh;
+        font-size: 9vw;
         -webkit-text-fill-color: transparent;
         -webkit-text-stroke: 1px;
+    }
+
+    /* Button Portfolio */
+
+    .button {
+        position: absolute;
+        bottom: 5vh;
+        z-index: var(--z-index90);
+    }
+
+    .button__portfolio {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        width: 15vw;
+        font-size: 3vw;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: 0.2s;
+        animation: flicker 5s infinite;
+        animation-timing-function: ease-in;
+    }
+
+    .button__line {
+        position: absolute;
+        bottom: 0;
+        width: 80%;
+        height: 3px;
+        background-color: var(--letter-color);
+        animation: lineMove 5s infinite;
+        animation-timing-function: cubic-bezier(0,0,1,1);
+    }
+
+    .button__portfolio:hover{
+        background-color: var(--letter-color);
+        color: var(--background-body);
+        box-shadow: 0 0 10px var(--letter-color), 0 0 40px var(--letter-color), 0 0 80px var(--letter-color);
+        transition-delay: 1s;
+    }
+
+    .button__span {
+        display: block;
+        position: absolute;
+    }
+
+    .button__span--n1{
+        top:0;
+        left: -100%;
+        width: 100%;
+        height: 5px;
+        background: linear-gradient(90deg, transparent,var(--letter-color));
+    }
+
+    .button__portfolio:hover .button__span--n1{
+        left: 100%;
+        transition: 1s;
+    }
+
+    @keyframes flicker {
+
+        25%{
+            color: var(--letter-gradient);
+        }
+        50%{
+            color: var(--letter-color);
+        }
+        75%{
+            color: var(--letter-gradient);
+        }
+    }
+
+    @keyframes lineMove {
+        10%{
+            width: 30%;
+        }
+        40%{
+            width: 50%;
+        }
+        75%{
+            width: 30%;
+        }
     }
 </style>
