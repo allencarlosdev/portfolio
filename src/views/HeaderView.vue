@@ -34,7 +34,8 @@
     .header {
         width: 100%;
         height: 80px;
-        position: relative;
+        position: absolute;
+        z-index: var(--z-index90);
     }
 
     .social-networks {

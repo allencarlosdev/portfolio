@@ -72,12 +72,11 @@
 <style scoped>
     .home {
         display: flex;
-        position: relative;
+        position: absolute;
         justify-content: center;
         align-items: center;
         width: 100%;
         height: 100%;
-        margin-bottom: 80px;
     }
 
     /* Title of the back */
@@ -102,7 +101,7 @@
 
     .image-carlos {
         position: absolute;
-        bottom:12vh;
+        bottom:200px;
         width: 30vw;
         z-index: var(--z-index70);
     }
@@ -132,6 +131,7 @@
     /* Button Portfolio */
 
     .button {
+        margin-bottom: 100px;
         position: absolute;
         bottom: 5vh;
         z-index: var(--z-index90);
