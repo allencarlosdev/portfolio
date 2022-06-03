@@ -1,7 +1,9 @@
 <template>
     <nav class="nav">
-        <router-link to="/" class="nav__link">Home</router-link> 
-        <router-link to="/portfolio" class="nav__link">Portfolio</router-link>
+        <router-link to="/portfolio" class="nav__link">All projects</router-link>
+        <router-link to="/templates" class="nav__link">Templates</router-link>
+        <router-link to="/copycat" class="nav__link">CopyCat Websites</router-link>
+        <router-link to="/complete-projects" class="nav__link">Complete projects</router-link>
         <router-link to="/skill" class="nav__link">Skill</router-link>
     </nav>
     <router-view v-slot="{ Component }">
