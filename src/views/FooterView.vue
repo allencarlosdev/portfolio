@@ -24,7 +24,7 @@
 <style scoped>
     .footer {
         background: var(--background-footer);
-        position: absolute;
+        position: fixed;
         bottom: 0;
         height: 80px;
         width: 100%;
