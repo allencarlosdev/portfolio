@@ -1,7 +1,7 @@
 <template>
     <footer class="footer">
         <div class="download-cv">
-            <router-link to="/portfolio" class="nav__link"><i class="fa-solid fa-circle-down"></i>Download CV</router-link>
+            <a href="https://drive.google.com/uc?export=download&id=1hGv2aHqnv5J6beAhBqJWP_tvx3Vk8szq" download="Carlos-Allen-CV" class="nav__link"><i class="fa-solid fa-circle-down"></i>Download CV</a>
         </div>
         <div class="contact-email">
             <p class="contact-email__p"><i class="fa-solid fa-envelope"></i> allencarlosdev@gmail.com </p>
@@ -17,7 +17,7 @@
 <script>
     export default {
         name:'FooterView',
-
+        publicPath: process.env.BASE_URL,
     }
 </script>
 
