@@ -102,10 +102,14 @@ import gsap from 'vue'
 
   .nav {
     display: flex;
+    background: var(--background-footer);
+    border-radius: 20px;
+    padding: 20px;
     justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
+    overflow: hidden;
   }
   .nav__link {
     font-weight: bold;
@@ -132,7 +136,7 @@ import gsap from 'vue'
     display: grid;
     gap: 15px;
     grid-template-columns: repeat(auto-fill, minmax(min(100%, 25rem), 1fr));
-    grid-auto-rows: minmax(150px, 330px);
+    grid-auto-rows: minmax(150px, 300px);
   }
 
   .project-list__page {

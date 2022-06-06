@@ -28,6 +28,7 @@
 /* Route transition */
     .fade-enter-from {
         opacity: 0;
+
     }
     .fade-enter-active {
         opacity: 0;
