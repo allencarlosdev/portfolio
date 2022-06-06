@@ -8,7 +8,13 @@
       <router-link to="/skill" class="nav__link"><i class="fa-solid fa-book"></i> Skill</router-link>
     </nav>
     <div class="container-copycat">
-      <ul class="project-list">        
+      <transition-group
+          appear=""
+          tag="ul"
+          class="project-list"
+          @before-enter="beforeEnter"
+          @enter="enter"
+        >       
         <li class="project-list__page" v-for="(project, index) in filterProjects" :key="project.id" :data-index="index"  @mouseover="setIndex(index)" @mouseout="setIndex(false)">
           <img :class="{'project-list__img':(indexId != index+1),'project-list__imghover':(indexId === index+1)}" :src="project.image" alt="">
             <div :class="{'card-on':(indexId === index+1), 'card-off':(indexId != index+1)}">
@@ -20,13 +26,13 @@
               </div>
             </div>
         </li>
-      </ul>
+      </transition-group>
     </div>
   </div>
 </template>
 
 <script>
-import gsap from 'vue'
+import gsap from 'gsap'
   export default {
     name: "copycat",
     data(){
@@ -73,12 +79,24 @@ import gsap from 'vue'
       }
     },
     methods:{
-    setIndex(value){
+      setIndex(value){
         if (value === false) {
           this.indexId='0';
         }else{
           this.indexId= value + 1;
         }
+      },
+      beforeEnter(el) {
+        el.style.opacity = 0;
+        el.style.transform = 'translateY(60px)'
+      },
+      enter (el) {
+        gsap.to(el,{
+          opacity:1,
+          y:0,
+          duration: 1.5,
+          delay: el.dataset.index * 0.7,
+        })
       }
     },
     computed: {

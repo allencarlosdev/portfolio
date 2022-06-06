@@ -8,17 +8,23 @@
       <router-link to="/skill" class="nav__link"><i class="fa-solid fa-book"></i> Skill</router-link>
     </nav>
     <div class="container-skill">
-      <ul class="skill-list">
+      <transition-group
+          appear=""
+          tag="ul"
+          class="skill-list"
+          @before-enter="beforeEnter"
+          @enter="enter"
+        >  
         <li class="skill-list__page" v-for="(skill, index) in skills" :key="skill.id" :data-index="index"  @mouseover="setIndex(index)" @mouseout="setIndex(false)">
           <img class="skill-list__img" :src="skill.image" alt="">
         </li>
-      </ul>
+      </transition-group>
     </div>
   </div>
 </template>
 
 <script>
-import gsap from 'vue'
+import gsap from 'gsap'
   export default {
     name: "skill",
     data(){
@@ -95,6 +101,18 @@ import gsap from 'vue'
         }else{
           this.indexId= value + 1;
         }
+      },
+      beforeEnter(el) {
+        el.style.opacity = 0;
+        el.style.transform = 'translateY(60px)'
+      },
+      enter (el) {
+        gsap.to(el,{
+          opacity:1,
+          y:0,
+          duration: 1.5,
+          delay: el.dataset.index * 0.7,
+        })
       }
     }
   }

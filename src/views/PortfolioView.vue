@@ -7,26 +7,33 @@
       <router-link to="/complete-projects" class="nav__link"><i class="fa-solid fa-laptop-code"></i> Complete projects</router-link>
       <router-link to="/skill" class="nav__link"><i class="fa-solid fa-book"></i> Skill</router-link>
     </nav>
-    <div class="container-portfolio">
-      <ul class="project-list">
-        <li class="project-list__page" v-for="(project, index) in projects" :key="project.id" :data-index="index"  @mouseover="setIndex(index)" @mouseout="setIndex(false)">
-          <img :class="{'project-list__img':(indexId != index+1),'project-list__imghover':(indexId === index+1)}" :src="project.image" alt="">
-            <div :class="{'card-on':(indexId === index+1), 'card-off':(indexId != index+1)}">
-              <h3 class="card__title">{{project.title}}</h3>
-              <p class="card__text">{{project.objective}}</p>
-              <div class="card-buttons">
-                <a class="card-buttons__project" :href="project.linkGithub" target="_blank">Code</a>
-                <a class="card-buttons__project" :href="project.linkPage" target="_blank">Website</a>
+      <div class="container-portfolio">
+        <!-- <ul class="project-list"> -->
+        <transition-group
+          appear=""
+          tag="ul"
+          class="project-list"
+          @before-enter="beforeEnter"
+          @enter="enter"
+        >
+          <li class="project-list__page" v-for="(project, index) in projects" :key="project.id" :data-index="index"  @mouseover="setIndex(index)" @mouseout="setIndex(false)">
+            <img :class="{'project-list__img':(indexId != index+1),'project-list__imghover':(indexId === index+1)}" :src="project.image" alt="">
+              <div :class="{'card-on':(indexId === index+1), 'card-off':(indexId != index+1)}">
+                <h3 class="card__title">{{project.title}}</h3>
+                <p class="card__text">{{project.objective}}</p>
+                <div class="card-buttons">
+                  <a class="card-buttons__project" :href="project.linkGithub" target="_blank">Code</a>
+                  <a class="card-buttons__project" :href="project.linkPage" target="_blank">Website</a>
+                </div>
               </div>
-            </div>
-        </li>
-      </ul>
-    </div>
+          </li>       
+        </transition-group>
+      </div>
   </div>
 </template>
 
 <script>
-import gsap from 'vue'
+import gsap from 'gsap'
   export default {
     name: "portfolio",
     data(){
@@ -79,6 +86,18 @@ import gsap from 'vue'
         }else{
           this.indexId= value + 1;
         }
+      },
+      beforeEnter(el) {
+        el.style.opacity = 0;
+        el.style.transform = 'translateY(60px)'
+      },
+      enter (el) {
+        gsap.to(el,{
+          opacity:1,
+          y:0,
+          duration: 1.5,
+          delay: el.dataset.index * 0.7,
+        })
       }
     }
   }
