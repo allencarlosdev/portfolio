@@ -16,13 +16,13 @@
           @enter="enter"
         >       
         <li class="project-list__page" v-for="(project, index) in filterProjects" :key="project.id" :data-index="index"  @mouseover="setIndex(index)" @mouseout="setIndex(false)">
-          <img :class="{'project-list__img':(indexId != index+1),'project-list__imghover':(indexId === index+1)}" :src="project.image" alt="">
+          <img :class="{'project-list__img':(indexId != index+1),'project-list__imghover':(indexId === index+1)}" :src="project.image" alt="image of complete projects list" loading="lazy">
             <div :class="{'card-on':(indexId === index+1), 'card-off':(indexId != index+1)}">
               <h3 class="card__title">{{project.title}}</h3>
               <p class="card__text">{{project.objective}}</p>
               <div class="card-buttons">
-                <a class="card-buttons__project" :href="project.linkGithub" target="_blank">Code</a>
-                <a class="card-buttons__project" :href="project.linkPage" target="_blank">Website</a>
+                <a rel="noopener noreferrer" class="card-buttons__project" :href="project.linkGithub" target="_blank">Code</a>
+                <a rel="noopener noreferrer" class="card-buttons__project" :href="project.linkPage" target="_blank">Website</a>
               </div>
             </div>
         </li>

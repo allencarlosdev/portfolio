@@ -16,7 +16,7 @@
           @enter="enter"
         >  
         <li class="skill-list__page" v-for="(skill, index) in skills" :key="skill.id" :data-index="index"  @mouseover="setIndex(index)" @mouseout="setIndex(false)">
-          <img class="skill-list__img" :src="skill.image" alt="">
+          <img class="skill-list__img" :src="skill.image" alt="images of the technologies used" loading="lazy">
         </li>
       </transition-group>
     </div>

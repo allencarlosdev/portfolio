@@ -1,10 +1,10 @@
 <template>
     <header class="header">
         <ul class="social-networks" @mouseover="setMove(true)" @mouseout="setMove(false)">
-            <li class="social-networks__link" :class="{'social-networks__link--active':(active ===1), 'social-networks__link--inactive':(active !== 1 && move === true)}" @mouseover="setActive(1)" ><a href="https://github.com/allencarlosdev" target="_blank"><i class="fa fa-github"></i></a></li>
-            <li class="social-networks__link" :class="{'social-networks__link--active':(active ===2), 'social-networks__link--inactive':(active !== 2 && move === true)}" @mouseover="setActive(2)" ><a href="https://www.linkedin.com/in/allencarlosdev/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-            <li class="social-networks__link" :class="{'social-networks__link--active':(active ===3), 'social-networks__link--inactive':(active !== 3 && move === true)}" @mouseover="setActive(3)" ><a href="https://stackoverflow.com/users/16209550/carlos-allen" target="_blank"><i class="fa fa-stack-overflow"></i></a></li>
-            <li class="social-networks__link" :class="{'social-networks__link--active':(active ===4), 'social-networks__link--inactive':(active !== 4 && move === true)}" @mouseover="setActive(4)" ><a href="https://www.sololearn.com/profile/20725585" target="_blank"><i class="fab fa-stripe-s"></i></a></li>
+            <li class="social-networks__link" :class="{'social-networks__link--active':(active ===1), 'social-networks__link--inactive':(active !== 1 && move === true)}" @mouseover="setActive(1)" ><a rel="noopener noreferrer" href="https://github.com/allencarlosdev" target="_blank"><i class="fa fa-github"></i></a></li>
+            <li class="social-networks__link" :class="{'social-networks__link--active':(active ===2), 'social-networks__link--inactive':(active !== 2 && move === true)}" @mouseover="setActive(2)" ><a rel="noopener noreferrer" href="https://www.linkedin.com/in/allencarlosdev/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+            <li class="social-networks__link" :class="{'social-networks__link--active':(active ===3), 'social-networks__link--inactive':(active !== 3 && move === true)}" @mouseover="setActive(3)" ><a rel="noopener noreferrer" href="https://stackoverflow.com/users/16209550/carlos-allen" target="_blank"><i class="fa fa-stack-overflow"></i></a></li>
+            <li class="social-networks__link" :class="{'social-networks__link--active':(active ===4), 'social-networks__link--inactive':(active !== 4 && move === true)}" @mouseover="setActive(4)" ><a rel="noopener noreferrer" href="https://www.sololearn.com/profile/20725585" target="_blank"><i class="fab fa-stripe-s"></i></a></li>
         </ul>
     </header>
 </template>

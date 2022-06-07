@@ -14,7 +14,7 @@
             <P class="name-title__dev">FULLSTACK</P>
         </div>
         <div class="image-carlos">
-            <img src="../assets/carlosallen.svg" alt="">
+            <img loading="lazy" src="../assets/carlosallen.svg" alt="Carlos Allen outline image">
         </div>
 
         <!-- <div class="name-title--front" :style="{transform:`translate(${x})`, transition:'all 3s'}"> -->
@@ -104,6 +104,7 @@
         position: absolute;
         top: 0;
         width: 36.25rem;
+        height: 40rem;
         z-index: var(--z-index60);
     }
     
@@ -233,6 +234,7 @@
 
     .image-carlos {
         width: 25.625rem;
+        height: 30rem;
     }
 
     .name-title--front {
@@ -313,7 +315,8 @@
     }
 
     .image-carlos {
-        width: 21.875px;
+        width: 21.875rem;
+        height: 25rem;
     }
 
 
