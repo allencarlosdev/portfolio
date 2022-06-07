@@ -216,4 +216,13 @@ import gsap from 'gsap'
     color: var(--background-body);
     
   }
+
+  @media screen and (max-width:480px){
+        .fa-solid{
+          display: none;
+        }
+        .nav__link{
+          margin-right: 5px;
+        }
+    }
 </style>

@@ -48,7 +48,6 @@
         top: 20px;
         bottom: 20px;
         margin-right: 60px;
-        /* right: 60px; */
     }
 
     .fa,.fab {
@@ -69,10 +68,11 @@
         opacity: 0.3;
     }
     
-    @media screen and (max-width:650) {
+    @media screen and (max-width:1050px) {
         .header {
             justify-content: center;
         }
+
         .social-networks {
             margin-right: auto;
             margin-left: auto;

@@ -179,4 +179,13 @@ import gsap from 'gsap'
     height: 100%;
     border-radius: 20px;
   }
+
+  @media screen and (max-width:480px){
+        .fa-solid{
+          display: none;
+        }
+        .nav__link{
+          margin-right: 5px;
+        }
+    }
 </style>

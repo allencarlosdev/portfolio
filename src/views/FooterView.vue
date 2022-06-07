@@ -78,4 +78,41 @@
         background:linear-gradient(var(--letter-color), var(--letter-gradient));
     }
 
+    @media screen and (max-width:630px){
+        .download-cv{
+            margin-left: 10px;
+        }
+
+        .button-home {
+            margin-right: 10px;
+        }
+    }
+
+    @media screen and (max-width:450px){
+        .download-cv{
+            width: 100px;
+            margin-left: 5px;
+        }
+        
+        .button-home {
+            width: 100px;
+            margin-right: 5px;
+        }
+    }
+
+    @media screen and (max-width:390px){
+        .download-cv{
+            width: 80px;
+            margin-left: 5px;
+        }
+        
+        .button-home {
+            width: 80px;
+            margin-right: 5px;
+        }
+
+        .fa-solid {
+            display: none;
+        }
+    }
 </style>
