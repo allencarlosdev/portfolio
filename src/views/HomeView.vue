@@ -76,8 +76,8 @@
         justify-content: center;
         align-items: center;
         width: 100%;
-        height: 820px;
-        margin-top: 100px;
+        height: 51.25rem;
+        margin-top: 6.25rem;
     }
 
     /* Title of the back */
@@ -85,25 +85,25 @@
     .name-title{
         position: absolute;
         z-index: var(--z-index60);
-        top: 180px;
-        line-height: 216px;
+        top: 11.25rem;
+        line-height: 13.5rem;
     }
     .name-title__carlos {
-        font-size: 240px;
+        font-size: 15rem;
         font-weight: 600;
     }
     .name-title__dev {
         text-align: center;
         font-weight: 600;
-        font-size: 180px;
+        font-size: 11.25rem;
     }
 
     /* Image of me (carlos xD) */
 
     .image-carlos {
         position: absolute;
-        top:0px;
-        width: 580px;
+        top: 0;
+        width: 36.25rem;
         z-index: var(--z-index60);
     }
     
@@ -112,30 +112,30 @@
     .name-title--front {
         position: absolute;
         z-index: var(--z-index70);
-        line-height: 216px;
-        top: 180px;
+        line-height: 13.5rem;
+        top: 11.25rem;
     }
 
     .name-title__carlos--front {
-        font-size: 240px;
+        font-size: 15rem;
         font-weight: 600;
         -webkit-text-fill-color: transparent;
-        -webkit-text-stroke: 1px;
+        -webkit-text-stroke: 0.063rem;
     }
     .name-title__dev--front {
         text-align: center;
         font-weight: 600;
-        font-size: 180px;
+        font-size: 11.25rem;
         -webkit-text-fill-color: transparent;
-        -webkit-text-stroke: 1px;
+        -webkit-text-stroke: 0.063rem;
     }
 
     /* Button Portfolio */
 
     .button {
-        margin-bottom: 100px;
+        margin-bottom: 6.25rem;
         position: absolute;
-        bottom: 60px;
+        bottom: 3.75rem;
         z-index: var(--z-index80);
     }
 
@@ -143,9 +143,9 @@
         display: flex;
         position: relative;
         justify-content: center;
-        width: 300px;
-        font-size: 60px;
-        border-radius: 10px;
+        width: 18.75rem;
+        font-size: 3.75rem;
+        border-radius: 0.625rem;
         overflow: hidden;
         transition: 0.2s;
         animation: flicker 5s infinite;
@@ -156,7 +156,7 @@
         position: absolute;
         bottom: 0;
         width: 80%;
-        height: 3px;
+        height: 0.188rem;
         background-color: var(--letter-color);
         animation: lineMove 5s infinite;
         animation-timing-function: cubic-bezier(0,0,1,1);
@@ -165,7 +165,7 @@
     .button__portfolio:hover{
         background-color: var(--letter-color);
         color: var(--background-body);
-        box-shadow: 0 0 10px var(--letter-color), 0 0 40px var(--letter-color), 0 0 80px var(--letter-color);
+        box-shadow: 0 0 0.625rem var(--letter-color), 0 0 2.5rem var(--letter-color), 0 0 5rem var(--letter-color);
         transition-delay: 1s;
     }
 
@@ -175,10 +175,10 @@
     }
 
     .button__span--n1{
-        top:0;
+        top: 0;
         left: -100%;
         width: 100%;
-        height: 5px;
+        height: 0.313rem;
         background: linear-gradient(90deg, transparent,var(--letter-color));
     }
 
@@ -214,115 +214,115 @@
 
     @media screen and (max-width:1280px){
     .home {
-        margin-top: 100px;
-        height: 690px;
+        margin-top: 6.25rem;
+        height: 43.125rem;
     }
 
     .name-title{
-        top: 120px;
-        line-height: 140px;
+        top: 7.5rem;
+        line-height: 8.75rem;
     }
     .name-title__carlos {
-        font-size: 160px;
+        font-size: 10rem;
     }
 
     .name-title__dev {
         font-weight: 500;
-        font-size: 130px;
+        font-size: 8.125rem;
     }
 
     .image-carlos {
-        width: 410px;
+        width: 25.625rem;
     }
 
     .name-title--front {
-        line-height: 140px;
-        top: 120px;
+        line-height: 8.75rem;
+        top: 7.5rem;
     }
 
     .name-title__carlos--front {
-        font-size: 160px;
+        font-size: 10rem;
     }
     .name-title__dev--front {
         font-weight: 500;
-        font-size: 130px;
+        font-size: 8.125rem;
     }
 
     .button {
-        margin-bottom: 160px;
+        margin-bottom: 10rem;
     }
     .button__portfolio {
-        width: 200px;
-        font-size: 50px;
+        width: 12.5rem;
+        font-size: 3.125rem;
     }
     }
 
     @media screen and (max-width:760px){
     .home {
-        margin-top: 80px;
-        height: 600px;
+        margin-top: 5rem;
+        height: 37.5rem;
     }
 
     .name-title{
-        top: 100px;
-        line-height: 120px;
+        top: 6.25rem;
+        line-height: 7.5rem;
     }
     .name-title__carlos {
-        font-size: 100px;
+        font-size: 6.25rem;
     }
 
     .name-title__dev {
         font-weight: 400;
-        font-size: 90px;
+        font-size: 5.625rem;
     }
 
     .name-title--front {
-        line-height: 120px;
-        top: 100px;
+        line-height: 7.5rem;
+        top: 6.25rem;
     }
 
     .name-title__carlos--front {
-        font-size: 100px;
+        font-size: 6.25rem;
     }
     .name-title__dev--front {
         font-weight: 400;
-        font-size: 90px;
+        font-size: 5.625rem;
     }
 
     .button {
-        margin-bottom: 50px;
+        margin-bottom: 3.125rem;
     }
     .button__portfolio {
-        width: 150px;
-        font-size: 40px;
+        width: 9.375rem;
+        font-size: 2.5rem;
     }
     }
 
     @media screen and (max-width:440px){
     .home {
-        height: 500px;
+        height: 31.25rem;
     }
 
     .name-title__carlos {
-        font-size: 80px;
+        font-size: 5rem;
     }
 
     .name-title__dev {
         font-weight: 300;
-        font-size: 70px;
+        font-size: 4.375rem;
     }
 
     .image-carlos {
-        width: 350px;
+        width: 21.875px;
     }
 
 
     .name-title__carlos--front {
-        font-size: 80px;
+        font-size: 5rem;
     }
     .name-title__dev--front {
         font-weight: 300;
-        font-size: 70px;
+        font-size: 4.375rem;
     }
     }
 </style>

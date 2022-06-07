@@ -37,7 +37,7 @@
         align-items: center;
 
         width: 100%;
-        height: 80px;
+        height: 5rem;
         position: absolute;
         z-index: var(--z-index90);
     }
@@ -45,15 +45,15 @@
     .social-networks {
         display: flex;
         position: absolute;
-        top: 20px;
-        bottom: 20px;
-        margin-right: 60px;
+        top: 1.25rem;
+        bottom: 1.25rem;
+        margin-right: 3.75rem;
     }
 
     .fa,.fab {
         color: var(--letter-color);
         font-size: 2rem;
-        margin: 0 10px;
+        margin: 0 0.625rem;
     }
 
     .social-networks__link {

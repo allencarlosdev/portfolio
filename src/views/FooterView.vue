@@ -17,7 +17,6 @@
 <script>
     export default {
         name:'FooterView',
-        publicPath: process.env.BASE_URL,
     }
 </script>
 
@@ -27,7 +26,7 @@
         position: fixed;
         z-index: var(--z-index90);
         bottom: 0;
-        height: 80px;
+        height: 5rem;
         width: 100%;
         display: flex;
         align-items: center;
@@ -39,12 +38,12 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 120px;
-        height: 40px;
+        width: 7.5rem;
+        height: 2.5rem;
         background: var(--letter-color);
-        margin-left: 100px;
+        margin-left: 6.25rem;
         cursor: pointer;
-        border-radius: 10px;
+        border-radius: 0.625rem;
     }
 
     .download-cv:hover{
@@ -57,7 +56,7 @@
     }
 
     .fa-circle-down, .fa-house-chimney {
-        margin-right: 5px;
+        margin-right: 0.313rem;
         color: var(--background-body);
     }
 
@@ -65,12 +64,12 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 120px;
-        height: 40px;
+        width: 7.5rem;
+        height: 2.5rem;
         background: var(--letter-color);
         cursor: pointer;
-        border-radius: 10px;
-        margin-right: 100px;
+        border-radius: 0.625rem;
+        margin-right: 6.25rem;
     }
 
     .button-home:hover {
@@ -80,35 +79,35 @@
 
     @media screen and (max-width:630px){
         .download-cv{
-            margin-left: 10px;
+            margin-left: 0.625rem;
         }
 
         .button-home {
-            margin-right: 10px;
+            margin-right: 0.625rem;
         }
     }
 
     @media screen and (max-width:450px){
         .download-cv{
-            width: 100px;
-            margin-left: 5px;
+            width: 6.25rem;
+            margin-left: 0.313rem;
         }
         
         .button-home {
-            width: 100px;
-            margin-right: 5px;
+            width: 6.25rem;
+            margin-right: 0.313rem;
         }
     }
 
     @media screen and (max-width:390px){
         .download-cv{
-            width: 80px;
-            margin-left: 5px;
+            width: 5rem;
+            margin-left: 0.313rem;
         }
         
         .button-home {
-            width: 80px;
-            margin-right: 5px;
+            width: 5rem;
+            margin-right: 0.313rem;
         }
 
         .fa-solid {

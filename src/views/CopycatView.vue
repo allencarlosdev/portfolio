@@ -114,15 +114,15 @@ import gsap from 'gsap'
     position: relative;
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 6.25rem;
     justify-content: center;
   }
 
   .nav {
     display: flex;
     background: var(--background-footer);
-    border-radius: 20px;
-    padding: 20px;
+    border-radius: 1.25rem;
+    padding: 1.25rem;
     justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
@@ -137,13 +137,13 @@ import gsap from 'gsap'
   }
 
   .fa-solid {
-    margin-right: 5px;
+    margin-right: 0.313rem;
   }
 
   /* All projects */
   .container-copycat {
-    margin-top: 20px;
-    margin-bottom: 120px;
+    margin-top: 1.25rem;
+    margin-bottom: 7.5rem;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
@@ -151,15 +151,15 @@ import gsap from 'gsap'
 
   .project-list {
     display: grid;
-    gap: 15px;
+    gap: 0.938rem;
     grid-template-columns: repeat(auto-fill, minmax(min(100%, 25rem), 1fr));
-    grid-auto-rows: minmax(150px, 300px);
+    grid-auto-rows: minmax(9.375rem, 18.75rem);
   }
 
   .project-list__page {
     background-color: var(--background-footer);
-    box-shadow: 2px 2px 6px 0px var(--background-footer);
-    border-radius: 20px;
+    box-shadow: 0.125rem 0.125rem 0.375rem 0 var(--background-footer);
+    border-radius: 1.25rem;
     text-align: center;
     overflow: hidden;
   }
@@ -167,15 +167,15 @@ import gsap from 'gsap'
   .project-list__img {
     width: 100%;
     height: 100%;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     transition: all 2s;
   }
   .project-list__imghover {
     width: 100%;
     height: 50%;
-    border-radius: 20px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
+    border-radius: 1.25rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
     transition: all 2s;
   }
 
@@ -188,14 +188,14 @@ import gsap from 'gsap'
   }
 
   .card__title {
-    margin: 5px 0px;
-    font-size: 1.5em;
-    z-index: 100;
+    margin: 0.313rem 0;
+    font-size: 1.5rem;
+    z-index: var(--z-index90);
   }
 
   .card__text {
-    font-size: 1em;
-    margin: 15px;
+    font-size: 1rem;
+    margin: 0.938rem;
   }
 
   .card-buttons{
@@ -209,10 +209,10 @@ import gsap from 'gsap'
     justify-content: center;
     background: var(--letter-color);
     text-align: center;
-    width: 100px;
-    height: 30px;
+    width: 6.25rem;
+    height: 1.875rem;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     color: var(--background-body);
     
   }
@@ -222,7 +222,7 @@ import gsap from 'gsap'
           display: none;
         }
         .nav__link{
-          margin-right: 5px;
+          margin-right: 0.313rem;
         }
     }
 </style>

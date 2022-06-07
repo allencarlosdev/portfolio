@@ -124,15 +124,15 @@ import gsap from 'gsap'
     position: relative;
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 6.25rem;
     justify-content: center;
   }
 
   .nav {
     display: flex;
     background: var(--background-footer);
-    border-radius: 20px;
-    padding: 20px;
+    border-radius: 1.25rem;
+    padding: 1.25rem;
     justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
@@ -147,13 +147,13 @@ import gsap from 'gsap'
   }
 
   .fa-solid {
-    margin-right: 5px;
+    margin-right: 0.313rem;
   }
 
   /* All projects */
   .container-skill {
-    margin-top: 20px;
-    margin-bottom: 120px;
+    margin-top: 1.25rem;
+    margin-bottom: 7.5rem;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
@@ -161,15 +161,15 @@ import gsap from 'gsap'
 
   .skill-list {
     display: grid;
-    gap: 50px;
+    gap: 3.125rem;
     grid-template-columns: repeat(auto-fill, minmax(min(100%, 8rem), 1fr));
-    grid-auto-rows: minmax(50px, 128px);
+    grid-auto-rows: minmax(3.125rem, 8rem);
   }
 
   .skill-list__page {
     background-color: var(--background-footer);
-    box-shadow: 2px 2px 6px 0px var(--background-footer);
-    border-radius: 20px;
+    box-shadow: 0.125rem 0.125rem 0.375rem 0 var(--background-footer);
+    border-radius: 1.25rem;
     text-align: center;
     overflow: hidden;
   }
@@ -177,7 +177,7 @@ import gsap from 'gsap'
   .skill-list__img {
     width: 100%;
     height: 100%;
-    border-radius: 20px;
+    border-radius: 1.25rem;
   }
 
   @media screen and (max-width:480px){
@@ -185,7 +185,7 @@ import gsap from 'gsap'
           display: none;
         }
         .nav__link{
-          margin-right: 5px;
+          margin-right: 0.313rem;
         }
     }
 </style>
