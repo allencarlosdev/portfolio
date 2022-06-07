@@ -32,6 +32,10 @@
 
 <style scoped>
     .header {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+
         width: 100%;
         height: 80px;
         position: absolute;
@@ -43,7 +47,8 @@
         position: absolute;
         top: 20px;
         bottom: 20px;
-        right: 60px;
+        margin-right: 60px;
+        /* right: 60px; */
     }
 
     .fa,.fab {
@@ -64,4 +69,13 @@
         opacity: 0.3;
     }
     
+    @media screen and (max-width:650) {
+        .header {
+            justify-content: center;
+        }
+        .social-networks {
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
 </style>

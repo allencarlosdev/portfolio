@@ -25,6 +25,7 @@
     .footer {
         background: var(--background-footer);
         position: fixed;
+        z-index: var(--z-index90);
         bottom: 0;
         height: 80px;
         width: 100%;

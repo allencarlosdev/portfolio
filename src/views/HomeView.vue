@@ -76,7 +76,8 @@
         justify-content: center;
         align-items: center;
         width: 100%;
-        height: 100%;
+        height: 820px;
+        margin-top: 100px;
     }
 
     /* Title of the back */
@@ -84,38 +85,39 @@
     .name-title{
         position: absolute;
         z-index: var(--z-index60);
-        line-height: 20vh;
-        /* transform:translate(100px); */
+        top: 180px;
+        line-height: 216px;
     }
     .name-title__carlos {
-        font-size: 12vw;
+        font-size: 240px;
         font-weight: 600;
     }
     .name-title__dev {
         text-align: center;
         font-weight: 600;
-        font-size: 9vw;
+        font-size: 180px;
     }
 
     /* Image of me (carlos xD) */
 
     .image-carlos {
         position: absolute;
-        bottom:200px;
-        width: 30vw;
-        z-index: var(--z-index70);
+        top:0px;
+        width: 580px;
+        z-index: var(--z-index60);
     }
     
     /* Title of the front */
 
     .name-title--front {
         position: absolute;
-        z-index: var(--z-index80);
-        line-height: 20vh;
+        z-index: var(--z-index70);
+        line-height: 216px;
+        top: 180px;
     }
 
     .name-title__carlos--front {
-        font-size: 12vw;
+        font-size: 240px;
         font-weight: 600;
         -webkit-text-fill-color: transparent;
         -webkit-text-stroke: 1px;
@@ -123,7 +125,7 @@
     .name-title__dev--front {
         text-align: center;
         font-weight: 600;
-        font-size: 9vw;
+        font-size: 180px;
         -webkit-text-fill-color: transparent;
         -webkit-text-stroke: 1px;
     }
@@ -133,16 +135,16 @@
     .button {
         margin-bottom: 100px;
         position: absolute;
-        bottom: 5vh;
-        z-index: var(--z-index90);
+        bottom: 60px;
+        z-index: var(--z-index80);
     }
 
     .button__portfolio {
         display: flex;
         position: relative;
         justify-content: center;
-        width: 15vw;
-        font-size: 3vw;
+        width: 300px;
+        font-size: 60px;
         border-radius: 10px;
         overflow: hidden;
         transition: 0.2s;
