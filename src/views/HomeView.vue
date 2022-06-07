@@ -211,4 +211,118 @@
             width: 30%;
         }
     }
+
+    @media screen and (max-width:1280px){
+    .home {
+        margin-top: 100px;
+        height: 690px;
+    }
+
+    .name-title{
+        top: 120px;
+        line-height: 140px;
+    }
+    .name-title__carlos {
+        font-size: 160px;
+    }
+
+    .name-title__dev {
+        font-weight: 500;
+        font-size: 130px;
+    }
+
+    .image-carlos {
+        width: 410px;
+    }
+
+    .name-title--front {
+        line-height: 140px;
+        top: 120px;
+    }
+
+    .name-title__carlos--front {
+        font-size: 160px;
+    }
+    .name-title__dev--front {
+        font-weight: 500;
+        font-size: 130px;
+    }
+
+    .button {
+        margin-bottom: 160px;
+    }
+    .button__portfolio {
+        width: 200px;
+        font-size: 50px;
+    }
+    }
+
+    @media screen and (max-width:760px){
+    .home {
+        margin-top: 80px;
+        height: 600px;
+    }
+
+    .name-title{
+        top: 100px;
+        line-height: 120px;
+    }
+    .name-title__carlos {
+        font-size: 100px;
+    }
+
+    .name-title__dev {
+        font-weight: 400;
+        font-size: 90px;
+    }
+
+    .name-title--front {
+        line-height: 120px;
+        top: 100px;
+    }
+
+    .name-title__carlos--front {
+        font-size: 100px;
+    }
+    .name-title__dev--front {
+        font-weight: 400;
+        font-size: 90px;
+    }
+
+    .button {
+        margin-bottom: 50px;
+    }
+    .button__portfolio {
+        width: 150px;
+        font-size: 40px;
+    }
+    }
+
+    @media screen and (max-width:440px){
+    .home {
+        height: 500px;
+    }
+
+    .name-title__carlos {
+        font-size: 80px;
+    }
+
+    .name-title__dev {
+        font-weight: 300;
+        font-size: 70px;
+    }
+
+    .image-carlos {
+        width: 350px;
+    }
+
+
+    .name-title__carlos--front {
+        font-size: 80px;
+    }
+    .name-title__dev--front {
+        font-weight: 300;
+        font-size: 70px;
+    }
+    }
 </style>

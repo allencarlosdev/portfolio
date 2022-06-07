@@ -35,4 +35,10 @@
   height: 100%;
   overflow: hidden;
 }
+
+@media screen and (max-width:1530px){
+  .container {
+    overflow: visible;
+  }
+    }
 </style>
