@@ -306,7 +306,7 @@
     }
 
     .name-title__carlos {
-        font-size: 5rem;
+        font-size: 4rem;
     }
 
     .name-title__dev {
@@ -321,7 +321,7 @@
 
 
     .name-title__carlos--front {
-        font-size: 5rem;
+        font-size: 4rem;
     }
     .name-title__dev--front {
         font-weight: 300;

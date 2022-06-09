@@ -45,7 +45,7 @@ import gsap from 'gsap'
             image:require("@/assets/allenpage1.svg"),
             objective:"My goal as a programmer for this static page was to make it as simple as possible without using methodologies, libraries etc.",
             linkGithub:"https://github.com/allencarlosdev/Allenpage1",
-            linkPage:"I don't have it yet",
+            linkPage:"https://allencarlosdev.github.io/page1/",
           },
           {
             id:2,
@@ -54,7 +54,7 @@ import gsap from 'gsap'
             image:require("@/assets/allenpage2.svg"),
             objective:"the goal of this static page is to try to replicate the original page but with some subtle changes in addition to using BEM methodology.",
             linkGithub:"https://github.com/allencarlosdev/Allenpage2",
-            linkPage:"I don't have it yet",
+            linkPage:"https://allencarlosdev.github.io/page2/",
           },
           {
             id:3,
@@ -72,7 +72,7 @@ import gsap from 'gsap'
             image:require("@/assets/portfolio.svg"),
             objective:"It shows all the own projects that I made to show to companies or clients, this page is made with Vuejs.",
             linkGithub:"https://github.com/allencarlosdev/portfolio",
-            linkPage:"I don't have it yet",
+            linkPage:"https://allencarlosdev.netlify.app/",
           },
         ],
         indexId:'0',
