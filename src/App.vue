@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <preloader />
     <HeaderView />
     <ContentView />
     <FooterView />
@@ -7,6 +8,7 @@
 </template>
 
 <script>
+  import preloader from './components/preloader.vue'
   import HeaderView from './views/HeaderView.vue'
   import ContentView from './views/ContentView.vue'
   import FooterView from './views/FooterView.vue'
@@ -14,6 +16,7 @@
   export default {
     name:'App',
     components: {
+      'preloader':preloader,
       'HeaderView':HeaderView,
       'ContentView':ContentView,
       'FooterView':FooterView,

@@ -22,7 +22,7 @@
 
 <style scoped>
     .footer {
-        background: var(--background-footer);
+        background: var(--background-body);
         position: fixed;
         z-index: var(--z-index90);
         bottom: 0;
