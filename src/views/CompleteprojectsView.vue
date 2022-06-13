@@ -69,7 +69,7 @@ import gsap from 'gsap'
             id:4,
             category:"Websites",
             title:"Portfolio",
-            image:require("@/assets/portfolio.svg"),
+            image:require("@/assets/allenpage4.svg"),
             objective:"It shows all the own projects that I made to show to companies or clients, this page is made with Vuejs.",
             linkGithub:"https://github.com/allencarlosdev/portfolio",
             linkPage:"https://allencarlosdev.netlify.app/",

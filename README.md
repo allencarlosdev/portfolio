@@ -1,19 +1,31 @@
-# portfolio
+# Allenpage 4 - PORTFOLIO
 
-## Project setup
-```
-npm install
-```
+_**Number of pages for the portfolio :** 4/6_
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+**Web Theme :**
 
-### Compiles and minifies for production
-```
-npm run build
-```
+Portfolio web site
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+**Purpose of the page :**
+
+showing projects to clients or potential employers
+
+**Objective as a programmer :**
+
+Create a web page in Vue with a nice design, responsive and with route preloads (Vue route)
+
+
+**The technologies used were :**
+
+- HTML
+- CSS
+- JAVASCRIPT
+- VueJs
+
+
+**Development environment :**
+
+VUE CLI
+
+## Image
+![App Screenshot](https://github.com/CarlosAllen93/portfolio/blob/src/assets/allenpage4.svg)
