@@ -31,8 +31,10 @@
 }
 
 .container {
+  background: var(--background-body);
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   position: absolute;
   width: 100%;
   height: 100%;

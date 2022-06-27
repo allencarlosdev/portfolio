@@ -82,27 +82,27 @@
         }
     .cls-2 {
         fill: var(--preload-logo);
-        animation: preloadColor 2s;
+        animation: preloadPosition 2s;
     }
     .cls-3 {
         fill: var(--preload-logo);
-        animation: preloadColor3 2s;
+        animation: preloadPosition3 2s;
     }
     .cls-4 {
         fill: var(--preload-logo);
-        animation: preloadColor4 2s;
+        animation: preloadPosition4 2s;
     }
-    @keyframes preloadColor {
+    @keyframes preloadPosition {
         0%{
             transform: translate(-150px,-150px);
         }
     }
-    @keyframes preloadColor3 {
+    @keyframes preloadPosition3 {
         0%{
             transform: translate(150px,150px);
         }
     }
-    @keyframes preloadColor4 {
+    @keyframes preloadPosition4 {
         0%{
             transform: rotate(-20deg);
         }
