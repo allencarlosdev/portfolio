@@ -37,7 +37,6 @@
     .footer-btn {
         margin: 5rem;
         cursor: pointer;
-        border-radius: 0.625rem;
         border: 0.25rem solid var(--letter-color);
         border-radius: 1rem;
     }

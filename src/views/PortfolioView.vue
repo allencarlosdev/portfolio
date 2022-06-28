@@ -1,24 +1,16 @@
 <template>
   <div class="portfolio">
-    <nav class="nav">
-      <router-link to="/portfolio" class="nav__link"><i class="fa-solid fa-table-list"></i> All projects</router-link>
-      <router-link to="/templates" class="nav__link"><i class="fa-solid fa-palette"></i> Templates</router-link>
-      <router-link to="/copycat" class="nav__link"><i class="fa-solid fa-copy"></i> CopyCat Websites</router-link>
-      <router-link to="/complete-projects" class="nav__link"><i class="fa-solid fa-laptop-code"></i> Complete projects</router-link>
-      <router-link to="/skill" class="nav__link"><i class="fa-solid fa-book"></i> Skill</router-link>
-    </nav>
-      <div class="container-portfolio">
-        <!-- <ul class="project-list"> -->
+      <div class="portfolio__container">
         <transition-group
           appear=""
           tag="ul"
-          class="project-list"
+          class="projects"
           @before-enter="beforeEnter"
           @enter="enter"
         >
-          <li class="project-list__page" v-for="(project, index) in projects" :key="project.id" :data-index="index"  @mouseover="setIndex(index)" @mouseout="setIndex(false)">
-            <img :class="{'project-list__img':(indexId != index+1),'project-list__imghover':(indexId === index+1)}" :src="project.image" alt="image of all projects list" loading="lazy">
-              <div :class="{'card-on':(indexId === index+1), 'card-off':(indexId != index+1)}">
+          <li class="projects__page" v-for="(project, index) in projects" :key="project.id" :data-index="index"  @mouseover="setIndex(index)" @mouseout="setIndex(false)">
+            <img :class="{'projects__img':(indexId != index+1),'projects__imghover':(indexId === index+1)}" :src="project.image" alt="image of all projects list" loading="lazy">
+              <div class="card-on">
                 <h3 class="card__title">{{project.title}}</h3>
                 <p class="card__text">{{project.objective}}</p>
                 <div class="card-buttons">
@@ -104,54 +96,28 @@ import gsap from 'gsap'
 </script>
 
 <style scoped>
-/* NavBar of the projects */
   .portfolio {
-    position: relative;
+    position: absolute;
     display: flex;
-    flex-direction: column;
-    margin-top: 6.25rem;
-    justify-content: center;
-  }
-
-  .nav {
-    display: flex;
-    background: var(--background-footer);
-    border-radius: 1.25rem;
-    padding: 1.25rem;
-    justify-content: space-between;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-  }
-  .nav__link {
-    font-weight: bold;
-    color: var(--letter-gradient);
-  }
-  .router-link-exact-active {
-    color: var(--letter-color);
-  }
-
-  .fa-solid {
-    margin-right: 0.313rem;
+    justify-content: end;
+    width: 100%;
   }
 
   /* All projects */
-  .container-portfolio{
-    margin-top: 1.25rem;
-    margin-bottom: 7.5rem;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
+  .portfolio__container{
+    margin: 5rem 0;
+    width: 90%;
+    padding: 5rem;
   }
 
-  .project-list {
+  .projects {
     display: grid;
     gap: 0.938rem;
-    grid-template-columns: repeat(auto-fill, minmax(min(100%, 25rem), 1fr));
-    grid-auto-rows: minmax(9.375rem, 18.75rem);
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 30rem), 1fr));
+    grid-auto-rows: minmax(10rem, 20rem);
   }
 
-  .project-list__page {
+  .projects__page {
     background-color: var(--background-footer);
     box-shadow: 0.125rem 0.125rem 0.375rem 0 var(--background-footer);
     border-radius: 1.25rem;
@@ -159,13 +125,13 @@ import gsap from 'gsap'
     overflow: hidden;
   }
 
-  .project-list__img {
+  .projects__img {
     width: 100%;
     height: 100%;
     border-radius: 1.25rem;
     transition: all 2s;
   }
-  .project-list__imghover {
+  .projects__imghover {
     width: 100%;
     height: 50%;
     border-radius: 1.25rem;
@@ -178,22 +144,19 @@ import gsap from 'gsap'
     display: block;
   }
   
-  .card-off {
-    display: none;
-  }
 
   .card__title {
-    margin: 0.313rem 0;
-    font-size: 1.5rem;
-    z-index: 100;
+    margin: 1rem 0;
+    font-size: 1rem;
+    z-index: 5;
   }
 
   .card__text {
-    font-size: 1rem;
-    margin: 0.938rem;
+    font-size: 0.8rem;
+    margin: 1rem;
   }
 
-  .card-buttons{
+  .card-buttons {
     display: flex;
     justify-content: space-around;
   }
@@ -202,23 +165,19 @@ import gsap from 'gsap'
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--letter-color);
     text-align: center;
     width: 6.25rem;
     height: 1.875rem;
     cursor: pointer;
-    border-radius: 0.625rem;
-    color: var(--background-body);
-    
+    color: var(--letter-color);
+    border: 0.25rem solid var(--letter-color);
+    border-radius: 0.5rem;
   }
 
-  @media screen and (max-width:480px){
-        .fa-solid{
-          display: none;
-        }
-        .nav__link{
-          margin-right: 0.313rem;
-        }
-    }
+  .card-buttons__project:hover {
+    background: var(--letter-color);
+    color: var(--background-body);
+  }
+
 </style>
 
