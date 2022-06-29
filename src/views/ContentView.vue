@@ -33,6 +33,8 @@
         width: 100%;
         height: 100%;
         z-index: 3;
+
+        /* background: green; */
     }
     .nav {
         position: fixed;
@@ -52,6 +54,11 @@
         font-weight: bold;
         color: var(--letter-gradient);
     }
+    
+    .nav__link:hover {
+        color: var(--letter-color);
+    }
+
     .router-link-exact-active {
         color: var(--letter-color);
     }

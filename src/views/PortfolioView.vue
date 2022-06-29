@@ -10,7 +10,7 @@
         >
           <li class="projects__page" v-for="(project, index) in projects" :key="project.id" :data-index="index"  @mouseover="setIndex(index)" @mouseout="setIndex(false)">
             <img :class="{'projects__img':(indexId != index+1),'projects__imghover':(indexId === index+1)}" :src="project.image" alt="image of all projects list" loading="lazy">
-              <div class="card-on">
+              <div class="card">
                 <h3 class="card__title">{{project.title}}</h3>
                 <p class="card__text">{{project.objective}}</p>
                 <div class="card-buttons">
@@ -101,6 +101,7 @@ import gsap from 'gsap'
     display: flex;
     justify-content: end;
     width: 100%;
+    /* background: lightcoral; */
   }
 
   /* All projects */
@@ -108,6 +109,7 @@ import gsap from 'gsap'
     margin: 5rem 0;
     width: 90%;
     padding: 5rem;
+    /* background: cyan; */
   }
 
   .projects {
@@ -115,6 +117,7 @@ import gsap from 'gsap'
     gap: 0.938rem;
     grid-template-columns: repeat(auto-fill, minmax(min(100%, 30rem), 1fr));
     grid-auto-rows: minmax(10rem, 20rem);
+    /* background: lightgoldenrodyellow; */
   }
 
   .projects__page {
@@ -140,7 +143,7 @@ import gsap from 'gsap'
     transition: all 2s;
   }
 
-  .card-on {
+  .card {
     display: block;
   }
   
