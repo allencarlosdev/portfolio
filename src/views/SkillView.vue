@@ -1,22 +1,15 @@
 <template>
   <div class="skill">
-    <nav class="nav">
-      <router-link to="/portfolio" class="nav__link"><i class="fa-solid fa-table-list"></i> All projects</router-link>
-      <router-link to="/templates" class="nav__link"><i class="fa-solid fa-palette"></i> Templates</router-link>
-      <router-link to="/copycat" class="nav__link"><i class="fa-solid fa-copy"></i> CopyCat Websites</router-link>
-      <router-link to="/complete-projects" class="nav__link"><i class="fa-solid fa-laptop-code"></i> Complete projects</router-link>
-      <router-link to="/skill" class="nav__link"><i class="fa-solid fa-book"></i> Skill</router-link>
-    </nav>
-    <div class="container-skill">
+    <div class="skill__container">
       <transition-group
           appear=""
           tag="ul"
-          class="skill-list"
+          class="skills"
           @before-enter="beforeEnter"
           @enter="enter"
         >  
-        <li class="skill-list__page" v-for="(skill, index) in skills" :key="skill.id" :data-index="index"  @mouseover="setIndex(index)" @mouseout="setIndex(false)">
-          <img class="skill-list__img" :src="skill.image" alt="images of the technologies used" loading="lazy">
+        <li class="skills__page" v-for="(skill, index) in skills" :key="skill.id" :data-index="index"  @mouseover="setIndex(index)" @mouseout="setIndex(false)">
+          <img class="skills__img" :src="skill.image" alt="images of the technologies used" loading="lazy">
         </li>
       </transition-group>
     </div>
@@ -119,54 +112,32 @@ import gsap from 'gsap'
 </script>
 
 <style scoped>
-/* NavBar of the projects */
   .skill {
-    position: relative;
+    position: absolute;
     display: flex;
-    flex-direction: column;
-    margin-top: 6.25rem;
-    justify-content: center;
-  }
+    justify-content: end;
+    width: 100%;
 
-  .nav {
-    display: flex;
-    background: var(--background-footer);
-    border-radius: 1.25rem;
-    padding: 1.25rem;
-    justify-content: space-between;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-  }
-  .nav__link {
-    font-weight: bold;
-    color: var(--letter-gradient);
-  }
-  .router-link-exact-active {
-    color: var(--letter-color);
-  }
-
-  .fa-solid {
-    margin-right: 0.313rem;
+    /* background: lightcoral; */
   }
 
   /* All projects */
-  .container-skill {
-    margin-top: 1.25rem;
-    margin-bottom: 7.5rem;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
+  .skill__container {
+    margin: 5rem 0;
+    width: 90%;
+    padding: 5rem;
+
+    /* background: cyan; */
   }
 
-  .skill-list {
+  .skills {
     display: grid;
     gap: 3.125rem;
     grid-template-columns: repeat(auto-fill, minmax(min(100%, 8rem), 1fr));
     grid-auto-rows: minmax(3.125rem, 8rem);
   }
 
-  .skill-list__page {
+  .skills__page {
     background-color: var(--background-footer);
     box-shadow: 0.125rem 0.125rem 0.375rem 0 var(--background-footer);
     border-radius: 1.25rem;
@@ -174,18 +145,10 @@ import gsap from 'gsap'
     overflow: hidden;
   }
 
-  .skill-list__img {
+  .skills__img {
     width: 100%;
     height: 100%;
     border-radius: 1.25rem;
   }
 
-  @media screen and (max-width:480px){
-        .fa-solid{
-          display: none;
-        }
-        .nav__link{
-          margin-right: 0.313rem;
-        }
-    }
 </style>
