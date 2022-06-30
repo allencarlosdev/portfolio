@@ -1,13 +1,13 @@
 <template>
     <footer class="footer">
-        <button class="footer-btn">
+        <button class="footer__btn">
             <a rel="noopener noreferrer" href="https://drive.google.com/uc?export=download&id=1qRMUFfXmoLZ__oNNcQI5rZDIBNUW5Fue" download="Carlos-Allen-CV" class="footer__link"><i class="fa-solid fa-circle-down"></i>Download CV</a>
         </button>
-        <div class="footer-email">
-            <p class="footer-email__p"><i class="fa-solid fa-envelope"></i> contact@allencarlosdev.com </p>
+        <div class="footer__email">
+            <p class="footer__p"><i class="fa-solid fa-envelope"></i> contact@allencarlosdev.com </p>
         </div>
 
-        <button class="footer-btn">
+        <button class="footer__btn footer__btn--home">
             <router-link to="/" class="footer__link"><i class="fa-solid fa-house-chimney"></i>Home</router-link>
         </button>
 
@@ -34,14 +34,14 @@
         font-size: 1.5rem;
     }
     
-    .footer-btn {
+    .footer__btn {
         margin: 5rem;
         cursor: pointer;
         border: 0.25rem solid var(--letter-color);
         border-radius: 1rem;
     }
 
-    .footer-btn:hover{
+    .footer__btn:hover{
         transition: .5s;
         background:var(--letter-color);
     }
@@ -61,6 +61,39 @@
 
     .fa-circle-down, .fa-house-chimney {
         margin-right: 0.5rem;
+    }
+
+    @media screen and (max-width:1000px) {
+        .footer__btn {
+            margin: 0.5rem;
+        }
+    }
+
+    @media screen and (max-width:710px) {
+        .footer {
+            height: 10rem;
+        }
+
+        .footer__email {
+            position: absolute;
+            text-align: center;
+            top:1rem;
+            left: 0;
+            right: 0;
+            order: 1;
+        }
+        .footer__btn {
+            order: 2;
+            margin-top: 3.5rem;
+        }
+    }
+    @media screen and (max-width:575px) {
+        .footer__btn--home {
+            display: none;
+        }
+        .footer {
+            justify-content: center;
+        }
     }
 
 </style>
