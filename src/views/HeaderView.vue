@@ -42,12 +42,15 @@
                 </g>
             </svg>
         </div>
+        <button class="header__home">
+            <router-link to="/"><i class="fa-solid fa-house-chimney"></i></router-link>
+        </button>
         <div>
-            <ul class="social" @mouseover="setMove(true)" @mouseout="setMove(false)">
-                <li class="social__link" :class="{'social__link--active':(active ===1), 'social__link--inactive':(active !== 1 && move === true)}" @mouseover="setActive(1)" ><a rel="noopener noreferrer" href="https://github.com/allencarlosdev" target="_blank"><i class="fa fa-github"></i></a></li>
-                <li class="social__link" :class="{'social__link--active':(active ===2), 'social__link--inactive':(active !== 2 && move === true)}" @mouseover="setActive(2)" ><a rel="noopener noreferrer" href="https://www.linkedin.com/in/allencarlosdev/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                <li class="social__link" :class="{'social__link--active':(active ===3), 'social__link--inactive':(active !== 3 && move === true)}" @mouseover="setActive(3)" ><a rel="noopener noreferrer" href="https://stackoverflow.com/users/16209550/carlos-allen" target="_blank"><i class="fa fa-stack-overflow"></i></a></li>
-                <li class="social__link" :class="{'social__link--active':(active ===4), 'social__link--inactive':(active !== 4 && move === true)}" @mouseover="setActive(4)" ><a rel="noopener noreferrer" href="https://www.sololearn.com/profile/20725585" target="_blank"><i class="fab fa-stripe-s"></i></a></li>
+            <ul class="header__social" @mouseover="setMove(true)" @mouseout="setMove(false)">
+                <li class="header__link" :class="{'header__link--active':(active ===1), 'header__link--inactive':(active !== 1 && move === true)}" @mouseover="setActive(1)" ><a rel="noopener noreferrer" href="https://github.com/allencarlosdev" target="_blank"><i class="fa fa-github"></i></a></li>
+                <li class="header__link" :class="{'header__link--active':(active ===2), 'header__link--inactive':(active !== 2 && move === true)}" @mouseover="setActive(2)" ><a rel="noopener noreferrer" href="https://www.linkedin.com/in/allencarlosdev/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                <li class="header__link" :class="{'header__link--active':(active ===3), 'header__link--inactive':(active !== 3 && move === true)}" @mouseover="setActive(3)" ><a rel="noopener noreferrer" href="https://stackoverflow.com/users/16209550/carlos-allen" target="_blank"><i class="fa fa-stack-overflow"></i></a></li>
+                <li class="header__link" :class="{'header__link--active':(active ===4), 'header__link--inactive':(active !== 4 && move === true)}" @mouseover="setActive(4)" ><a rel="noopener noreferrer" href="https://www.sololearn.com/profile/20725585" target="_blank"><i class="fab fa-stripe-s"></i></a></li>
             </ul>
         </div>
     </header>
@@ -135,8 +138,18 @@
         fill: var(--background-body);
     }
 
+    /* home buttons */
+
+    .header__home {
+        display: none;
+        color: var(--letter-color);
+        font-size: 2.5rem;
+        padding: 0 2rem;
+        border-right: 0.25rem solid var(--letter-color);
+    }
+
     /* social menu */
-    .social {
+    .header__social {
         display: flex;
         margin-right: 4rem;
     }
@@ -147,27 +160,56 @@
         margin: 1rem;
     }
 
-    .social__link {
+    .header__link {
         transition: all 0.8s;
     }
 
-    .social__link--active {
+    .header__link--active {
         opacity: 1;
     }
 
-    .social__link--inactive {
+    .header__link--inactive {
         opacity: 0.3;
     }
     
-    /* @media screen and (max-width:1050px) {
-        .header {
-            justify-content: center;
+    @media screen and (max-width:1440px) {
+
+        .header__triangle {
+            width: 8rem;
+            height: 8em;
+        }
+        .header__logo {
+            width: 1.8rem;
+        }
+    }
+
+    @media screen and (max-width:575px) {
+        .header__triangle {
+            display: none;
+        }
+        .header__logo {
+            display: none;
         }
 
-        .social-networks {
-            margin-right: auto;
-            margin-left: auto;
+        .header__home {
+            display: block;
         }
-    } */
+
+        .header__social {
+        margin-right: 2rem;
+        }
+    }
+
+    @media screen and (max-width:400px) {
+
+        .header__social {
+            margin-right: 0.8rem;
+        }
+
+        .header__home {
+            padding: 0 0.8rem;
+        }
+
+    }
     
 </style>
