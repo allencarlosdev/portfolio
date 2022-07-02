@@ -71,7 +71,7 @@
 
     @media screen and (max-width:710px) {
         .footer {
-            height: 10rem;
+            height: 7.5rem;
         }
 
         .footer__email {
