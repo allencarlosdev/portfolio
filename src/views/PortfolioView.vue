@@ -11,8 +11,8 @@
           <li class="portfolio__page" v-for="(project, index) in projects" :key="project.id" :data-index="index"  @mouseover="setIndex(index)" @mouseout="setIndex(false)">
             <img :class="{'portfolio__img':(indexId != index+1),'portfolio__imghover':(indexId === index+1)}" :src="project.image" alt="image of all projects list" loading="lazy">
               <div class="portfolio__card">
-                <h3 class="portfolio____title">{{project.title}}</h3>
-                <p class="portfolio____text">{{project.objective}}</p>
+                <h3 class="portfolio__title">{{project.title}}</h3>
+                <p class="portfolio__text">{{project.objective}}</p>
                 <div class="portfolio__buttons">
                   <a rel="noopener noreferrer" class="portfolio__btn" :href="project.linkGithub" target="_blank">Code</a>
                   <a rel="noopener noreferrer" class="portfolio__btn" :href="project.linkPage" target="_blank">Website</a>
@@ -35,7 +35,7 @@ import gsap from 'gsap'
             id:1,
             category:"Templates",
             title:"Allenpage1",
-            image:require("@/assets/allenpage1.svg"),
+            image:require("@/assets/allenpage1.png"),
             objective:"My goal as a programmer for this static page was to make it as simple as possible without using methodologies, libraries etc.",
             linkGithub:"https://github.com/allencarlosdev/Allenpage1",
             linkPage:"https://allencarlosdev.github.io/page1/",
@@ -44,7 +44,7 @@ import gsap from 'gsap'
             id:2,
             category:"CopyCat",
             title:"Allenpage2",
-            image:require("@/assets/allenpage2.svg"),
+            image:require("@/assets/allenpage2.png"),
             objective:"the goal of this static page is to try to replicate the original page but with some subtle changes in addition to using BEM methodology.",
             linkGithub:"https://github.com/allencarlosdev/Allenpage2",
             linkPage:"https://allencarlosdev.github.io/page2/",
@@ -62,7 +62,7 @@ import gsap from 'gsap'
             id:4,
             category:"Websites",
             title:"Portfolio",
-            image:require("@/assets/allenpage4.svg"),
+            image:require("@/assets/allenpage4.png"),
             objective:"It shows all the own projects that I made to show to companies or clients, this page is made with Vuejs.",
             linkGithub:"https://github.com/allencarlosdev/portfolio",
             linkPage:"https://allencarlosdev.netlify.app/",

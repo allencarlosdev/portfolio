@@ -143,12 +143,14 @@ import gsap from 'gsap'
     border-radius: 1.25rem;
     text-align: center;
     overflow: hidden;
+    padding: 1rem;
   }
 
   .skill__img {
     width: 100%;
     height: 100%;
     border-radius: 1.25rem;
+    object-fit: contain;
   }
 
   @media screen and (max-width:1000px) {
