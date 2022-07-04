@@ -14,8 +14,8 @@
               <h3 class="complete-projects__title">{{project.title}}</h3>
               <p class="complete-projects__text">{{project.objective}}</p>
               <div class="complete-projects__buttons">
-                <a rel="noopener noreferrer" class="complete-projects__btn" :href="project.linkGithub" target="_blank">Code</a>
-                <a rel="noopener noreferrer" class="complete-projects__btn" :href="project.linkPage" target="_blank">Website</a>
+                <a rel="noopener noreferrer" :title="project.links.titleCode" class="complete-projects__btn" :href="project.links.hrefCode" target="_blank">Code</a>
+                  <a rel="noopener noreferrer" :title="project.links.titlePage" class="complete-projects__btn" :href="project.links.hrefPage" target="_blank">Website</a>
               </div>
             </div>
         </li>
@@ -30,15 +30,17 @@ import gsap from 'gsap'
     name: "complete-projects",
     data(){
       return{
-        projects:[
+          projects:[
           {
             id:1,
             category:"Templates",
             title:"Allenpage1",
             image:require("@/assets/allenpage1.png"),
             objective:"My goal as a programmer for this static page was to make it as simple as possible without using methodologies, libraries etc.",
-            linkGithub:"https://github.com/allencarlosdev/Allenpage1",
-            linkPage:"https://allencarlosdev.github.io/page1/",
+            links:{
+              hrefCode:"https://github.com/allencarlosdev/Allenpage1", titleCode:"code on github page 1",
+              hrefPage :"https://allencarlosdev.github.io/page1/", titlePage:"web page 1",
+            }
           },
           {
             id:2,
@@ -46,8 +48,10 @@ import gsap from 'gsap'
             title:"Allenpage2",
             image:require("@/assets/allenpage2.png"),
             objective:"the goal of this static page is to try to replicate the original page but with some subtle changes in addition to using BEM methodology.",
-            linkGithub:"https://github.com/allencarlosdev/Allenpage2",
-            linkPage:"https://allencarlosdev.github.io/page2/",
+            links:{
+              hrefCode:"https://github.com/allencarlosdev/Allenpage2", titleCode:"code on github page 2",
+              hrefPage :"https://allencarlosdev.github.io/page2/", titlePage:"web page 2 - valorant",
+            }
           },
           {
             id:3,
@@ -55,8 +59,10 @@ import gsap from 'gsap'
             title:"Allenpage3",
             image:require("@/assets/allenpage3.svg"),
             objective:"The goal is to create a complete page for both the backend part (Laravel-MySQL) and the frontend part (Livewire) with its respective administration panel (AdminLTE).",
-            linkGithub:"https://github.com/allencarlosdev/Allenpage3",
-            linkPage:"I don't have it yet",
+            links:{
+              hrefCode:"https://github.com/allencarlosdev/Allenpage3", titleCode:"code on github page 3",
+              hrefPage :"I don't have it yet", titlePage:"web page 3 - AllenBlog",
+            }
           },
           {
             id:4,
@@ -64,8 +70,10 @@ import gsap from 'gsap'
             title:"Portfolio",
             image:require("@/assets/allenpage4.png"),
             objective:"It shows all the own projects that I made to show to companies or clients, this page is made with Vuejs.",
-            linkGithub:"https://github.com/allencarlosdev/portfolio",
-            linkPage:"https://allencarlosdev.netlify.app/",
+            links:{
+              hrefCode:"https://github.com/allencarlosdev/portfolio", titleCode:"code on github page portfolio",
+              hrefPage :"https://allencarlosdev.com", titlePage:"Portfolio web of Carlos Allen",
+            }
           },
         ],
         indexId:'0',
@@ -73,11 +81,7 @@ import gsap from 'gsap'
     },
     methods:{
       setIndex(value){
-        if (value === false) {
-          this.indexId='0';
-        }else{
-          this.indexId= value + 1;
-        }
+        this.indexId = (value === false) ? '0' : value + 1;
       },
       beforeEnter(el) {
         el.style.opacity = 0;

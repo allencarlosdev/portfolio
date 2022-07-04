@@ -47,10 +47,10 @@
         </button>
         <div>
             <ul class="header__social" @mouseover="setMove(true)" @mouseout="setMove(false)">
-                <li class="header__link" :class="{'header__link--active':(active ===1), 'header__link--inactive':(active !== 1 && move === true)}" @mouseover="setActive(1)" ><a rel="noopener noreferrer" href="https://github.com/allencarlosdev" target="_blank"><i class="fa fa-github"></i></a></li>
-                <li class="header__link" :class="{'header__link--active':(active ===2), 'header__link--inactive':(active !== 2 && move === true)}" @mouseover="setActive(2)" ><a rel="noopener noreferrer" href="https://www.linkedin.com/in/allencarlosdev/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                <li class="header__link" :class="{'header__link--active':(active ===3), 'header__link--inactive':(active !== 3 && move === true)}" @mouseover="setActive(3)" ><a rel="noopener noreferrer" href="https://stackoverflow.com/users/16209550/carlos-allen" target="_blank"><i class="fa fa-stack-overflow"></i></a></li>
-                <li class="header__link" :class="{'header__link--active':(active ===4), 'header__link--inactive':(active !== 4 && move === true)}" @mouseover="setActive(4)" ><a rel="noopener noreferrer" href="https://www.sololearn.com/profile/20725585" target="_blank"><i class="fab fa-stripe-s"></i></a></li>
+                <li class="header__link" :class="{'header__link--active':(active ===1), 'header__link--inactive':(active !== 1 && move === true)}" @mouseover="setActive(1)" ><a rel="noopener noreferrer" href="https://github.com/allencarlosdev" target="_blank" title="link of github"><i class="fa fa-github"></i></a></li>
+                <li class="header__link" :class="{'header__link--active':(active ===2), 'header__link--inactive':(active !== 2 && move === true)}" @mouseover="setActive(2)" ><a rel="noopener noreferrer" href="https://www.linkedin.com/in/allencarlosdev/" target="_blank" title="link of linkedin"><i class="fa fa-linkedin"></i></a></li>
+                <li class="header__link" :class="{'header__link--active':(active ===3), 'header__link--inactive':(active !== 3 && move === true)}" @mouseover="setActive(3)" ><a rel="noopener noreferrer" href="https://stackoverflow.com/users/16209550/carlos-allen" target="_blank" title="link of  stackoverflow"><i class="fa fa-stack-overflow"></i></a></li>
+                <li class="header__link" :class="{'header__link--active':(active ===4), 'header__link--inactive':(active !== 4 && move === true)}" @mouseover="setActive(4)" ><a rel="noopener noreferrer" href="https://www.sololearn.com/profile/20725585" target="_blank" title="link of sololearn"><i class="fab fa-stripe-s"></i></a></li>
             </ul>
         </div>
     </header>
