@@ -28,4 +28,4 @@ Create a web page in Vue with a nice design, responsive and with route preloads 
 VUE CLI
 
 ## Image
-![App Screenshot](https://github.com/CarlosAllen93/portfolio/blob/src/assets/allenpage4.svg)
+![App Screenshot](https://github.com/allencarlosdev/portfolio/blob/main/src/assets/allenpage4.png)
