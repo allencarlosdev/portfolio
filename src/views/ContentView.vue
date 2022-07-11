@@ -99,7 +99,7 @@
     }
     .fade-leave-to {
         opacity: 0;
-        transform: translateX(-6.25rem);
+        transform: translateY(10rem);
     }
     .fade-leave-active {
         transition: all 1s ease-in;
