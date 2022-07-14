@@ -109,7 +109,7 @@ import gsap from 'gsap'
   }
 
   /* All projects */
-  .portfolio__container{
+  .portfolio__container {
     margin: 5rem 0;
     width: 90%;
     padding: 5rem;
@@ -189,7 +189,13 @@ import gsap from 'gsap'
   @media screen and (max-width:1000px) {
     .portfolio__container {
       width: 100%;
-      padding: 5rem 0.5rem;
+      padding: 5rem 2rem;
+    }
+  }
+
+  @media screen and (max-width:500px) {
+    .portfolio__container{
+      padding: 5rem 1rem;
     }
   }
 
