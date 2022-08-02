@@ -1,6 +1,6 @@
 <template>
     <footer class="footer">
-        <button class="footer__btn">
+        <button class="footer__btn footer__btn--cv">
             <a rel="noopener noreferrer" href="https://drive.google.com/uc?export=download&id=16Q7Wn7wNp_tTIOqCAkfZ_9RI0TaxSaL1" download="Carlos-Allen-CV" class="footer__link"><i class="fa-solid fa-circle-down"></i>Download CV</a>
         </button>
         <div class="footer__email">
@@ -88,7 +88,7 @@
         }
     }
     @media screen and (max-width:575px) {
-        .footer__btn--home {
+        .footer__btn--cv {
             display: none;
         }
         .footer {

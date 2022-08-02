@@ -42,9 +42,6 @@
                 </g>
             </svg>
         </div>
-        <button class="header__home">
-            <router-link to="/"><i class="fa-solid fa-house-chimney"></i></router-link>
-        </button>
         <div>
             <ul class="header__social" @mouseover="setMove(true)" @mouseout="setMove(false)">
                 <li class="header__link" :class="{'header__link--active':(active ===1), 'header__link--inactive':(active !== 1 && move === true)}" @mouseover="setActive(1)" ><a rel="noopener noreferrer" href="https://github.com/allencarlosdev" target="_blank" title="link of github"><i class="fa fa-github"></i></a></li>
@@ -140,13 +137,6 @@
 
     /* home buttons */
 
-    .header__home {
-        display: none;
-        color: var(--letter-color);
-        font-size: 2.5rem;
-        padding: 0 2rem;
-        border-right: 0.25rem solid var(--letter-color);
-    }
 
     /* social menu */
     .header__social {
@@ -184,6 +174,9 @@
     }
 
     @media screen and (max-width:575px) {
+        .header {
+            justify-content: center;
+        }
         .header__triangle {
             display: none;
         }
@@ -191,9 +184,6 @@
             display: none;
         }
 
-        .header__home {
-            display: block;
-        }
 
         .header__social {
         margin-right: 2rem;
@@ -206,9 +196,6 @@
             margin-right: 0.8rem;
         }
 
-        .header__home {
-            padding: 0 0.8rem;
-        }
 
     }
     
