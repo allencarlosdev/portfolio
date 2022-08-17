@@ -37,6 +37,11 @@ const routes = [
     name: 'skill',
     component: () => import(/* webpackChunkName: "about" */ '../views/SkillView.vue')
   },
+  {
+    path: '/allenblog',
+    name: 'allenblog',
+    component: () => import(/* webpackChunkName: "about" */ '../views/AllenblogView.vue')
+  },
 ]
 
 const router = createRouter({
