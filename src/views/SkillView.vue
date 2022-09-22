@@ -18,72 +18,12 @@
 
 <script>
 import gsap from 'gsap'
+import { skillsData } from '../components/skillsData.js'
   export default {
     name: "skill",
     data(){
       return{
-        skills:[
-          {
-            id:1,
-            title:"HTML",
-            image:require("@/assets/skill/html.svg"),
-          },
-          {
-            id:2,
-            title:"CSS",
-            image:require("@/assets/skill/css.svg"),
-          },
-          {
-            id:3,
-            title:"JAVASCRIPT",
-            image:require("@/assets/skill/javascript.svg"),
-          },
-          {
-            id:4,
-            title:"PHP",
-            image:require("@/assets/skill/php.svg"),
-          },
-          {
-            id:5,
-            title:"MYSQL",
-            image:require("@/assets/skill/mysql.svg"),
-          },
-          {
-            id:6,
-            title:"VUE",
-            image:require("@/assets/skill/vue.svg"),
-          },
-          {
-            id:7,
-            title:"BOOTSTRAP",
-            image:require("@/assets/skill/bootstrap.svg"),
-          },
-          {
-            id:8,
-            title:"LIVEWIRE",
-            image:require("@/assets/skill/livewire.svg"),
-          },
-          {
-            id:9,
-            title:"GIT",
-            image:require("@/assets/skill/git.svg"),
-          },
-          {
-            id:10,
-            title:"ALPINEJS",
-            image:require("@/assets/skill/alpinejs.svg"),
-          },
-          {
-            id:11,
-            title:"LARAVEL",
-            image:require("@/assets/skill/laravel.svg"),
-          },
-          {
-            id:12,
-            title:"TAILWINDCSS",
-            image:require("@/assets/skill/tailwind.svg"),
-          },
-        ],
+        skills : skillsData,
         indexId:'0',
       }
     },
