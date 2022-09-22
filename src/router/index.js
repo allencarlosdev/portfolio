@@ -18,29 +18,29 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/PortfolioView.vue')
   },
   {
-    path: '/templates',
-    name: 'templates',
-    component: () => import(/* webpackChunkName: "about" */ '../views/TemplatesView.vue')
+    path: '/vue',
+    name: 'vue',
+    component: () => import('../views/VueView.vue')
   },
   {
-    path: '/copycat',
-    name: 'copycat',
-    component: () => import(/* webpackChunkName: "about" */ '../views/CopycatView.vue')
+    path: '/laravel',
+    name: 'laravel',
+    component: () => import('../views/LaravelView.vue')
   },
   {
-    path: '/complete-projects',
-    name: 'complete-projects',
-    component: () => import(/* webpackChunkName: "about" */ '../views/CompleteprojectsView.vue')
+    path: '/vanilla',
+    name: 'vanilla',
+    component: () => import( '../views/VanillaView.vue')
   },
   {
     path: '/skill',
     name: 'skill',
-    component: () => import(/* webpackChunkName: "about" */ '../views/SkillView.vue')
+    component: () => import('../views/SkillView.vue')
   },
   {
     path: '/allenblog',
     name: 'allenblog',
-    component: () => import(/* webpackChunkName: "about" */ '../views/AllenblogView.vue')
+    component: () => import('../views/AllenblogView.vue')
   },
 ]
 

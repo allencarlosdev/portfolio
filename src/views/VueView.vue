@@ -1,21 +1,21 @@
 <template>
-  <div class="templates">
-    <div class="templates__container">
+  <div class="vue">
+    <div class="vue__container">
       <transition-group
           appear=""
           tag="ul"
-          class="templates__projects"
+          class="vue__projects"
           @before-enter="beforeEnter"
           @enter="enter"
         >       
-        <li class="templates__page" v-for="(project, index) in filterProjects" :key="project.id" :data-index="index"  @mouseover="setIndex(index)" @mouseout="setIndex(false)">
-          <img :class="{'templates__img':(indexId != index+1),'templates__imghover':(indexId === index+1)}" :src="project.image" alt="image of templates list">
-            <div class="templates__card">
-              <h3 class="templates__title">{{project.title}}</h3>
-              <p class="templates__text">{{project.objective}}</p>
-              <div class="templates__buttons">
-                  <a rel="noopener noreferrer" :title="project.links.titleCode" class="templates__btn" :href="project.links.hrefCode" target="_blank">Code</a>
-                  <a rel="noopener noreferrer" :title="project.links.titlePage" class="templates__btn" :href="project.links.hrefPage" target="_blank">Website</a>
+        <li class="vue__page" v-for="(project, index) in filterProjects" :key="project.id" :data-index="index"  @mouseover="setIndex(index)" @mouseout="setIndex(false)">
+          <img :class="{'vue__img':(indexId != index+1),'vue__imghover':(indexId === index+1)}" :src="project.image" alt="image of vue list">
+            <div class="vue__card">
+              <h3 class="vue__title">{{project.title}}</h3>
+              <p class="vue__text">{{project.objective}}</p>
+              <div class="vue__buttons">
+                  <a rel="noopener noreferrer" :title="project.links.titleCode" class="vue__btn" :href="project.links.hrefCode" target="_blank">Code</a>
+                  <a rel="noopener noreferrer" :title="project.links.titlePage" class="vue__btn" :href="project.links.hrefPage" target="_blank">Website</a>
               </div>
             </div>
         </li>
@@ -28,7 +28,7 @@
 import gsap from 'gsap'
 import { projectsData } from '../components/projectsData.js'
   export default {
-    name: "templates",
+    name: "vue",
     data(){
       return{
           projects : projectsData,
@@ -54,7 +54,7 @@ import { projectsData } from '../components/projectsData.js'
     },
     computed: {
         filterProjects: function (){
-            return this.projects.filter(project => project.category === 'Templates')
+            return this.projects.filter(project => project.category.includes("Vue") === true)
         }
     }
     
@@ -62,7 +62,7 @@ import { projectsData } from '../components/projectsData.js'
 </script>
 
 <style scoped>
-  .templates {
+  .vue {
     position: absolute;
     display: flex;
     justify-content: end;
@@ -72,7 +72,7 @@ import { projectsData } from '../components/projectsData.js'
   }
 
   /* All projects */
-  .templates__container {
+  .vue__container {
     margin: 5rem 0;
     width: 90%;
     padding: 5rem;
@@ -80,7 +80,7 @@ import { projectsData } from '../components/projectsData.js'
     /* background: cyan; */
   }
 
-  .templates__projects {
+  .vue__projects {
     display: grid;
     gap: 0.938rem;
     grid-template-columns: repeat(auto-fill, minmax(min(100%, 30rem), 1fr));
@@ -89,7 +89,7 @@ import { projectsData } from '../components/projectsData.js'
     /* background: lightgoldenrodyellow; */
   }
 
-  .templates__page {
+  .vue__page {
     background-color: var(--background-footer);
     box-shadow: 0.125rem 0.125rem 0.375rem 0 var(--background-footer);
     border-radius: 1.25rem;
@@ -97,13 +97,13 @@ import { projectsData } from '../components/projectsData.js'
     overflow: hidden;
   }
 
-  .templates__img {
+  .vue__img {
     width: 100%;
     height: 100%;
     border-radius: 1.25rem;
     transition: all 2s;
   }
-  .templates__imghover {
+  .vue__imghover {
     width: 100%;
     height: 50%;
     border-radius: 1.25rem;
@@ -112,27 +112,27 @@ import { projectsData } from '../components/projectsData.js'
     transition: all 2s;
   }
 
-  .templates__card {
+  .vue__card {
     display: block;
   }
   
-  .templates__title {
+  .vue__title {
     margin: 1rem 0;
     font-size: 1rem;
     z-index: 5;
   }
 
-  .templates__text {
+  .vue__text {
     font-size: 0.8rem;
     margin: 1rem;
   }
 
-  .templates__buttons {
+  .vue__buttons {
     display: flex;
     justify-content: space-around;
   }
 
-  .templates__btn {
+  .vue__btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -145,20 +145,20 @@ import { projectsData } from '../components/projectsData.js'
     border-radius: 0.5rem;
   }
 
-  .templates__btn:hover {
+  .vue__btn:hover {
     background: var(--letter-color);
     color: var(--background-body);
   }
 
   @media screen and (max-width:1000px) {
-    .templates__container {
+    .vue__container {
       width: 100%;
       padding: 5rem 2rem;
     }
   }
 
   @media screen and (max-width:500px) {
-    .templates__container {
+    .vue__container {
       padding: 5rem 1rem;
     }
   }

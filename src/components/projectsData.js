@@ -1,7 +1,7 @@
 export let projectsData = [
     {
       id:1,
-      category:"Templates",
+      category:["Laravel", "Vanilla"],
       title:"Allenpage1",
       image:require("@/assets/allenpage1.png"),
       objective:"My goal as a programmer for this static page was to make it as simple as possible without using methodologies, libraries etc.",
@@ -12,7 +12,7 @@ export let projectsData = [
     },
     {
       id:2,
-      category:"CopyCat",
+      category:["Laravel", "Vanilla"],
       title:"Allenpage2",
       image:require("@/assets/allenpage2.png"),
       objective:"the goal of this static page is to try to replicate the original page but with some subtle changes in addition to using BEM methodology.",
@@ -23,7 +23,7 @@ export let projectsData = [
     },
     {
       id:3,
-      category:"Websites",
+      category:["Laravel"],
       title:"Allenpage3",
       image:require("@/assets/allenpage3.svg"),
       objective:"The goal is to create a complete page for both the backend part (Laravel-MySQL) and the frontend part (Livewire) with its respective administration panel (AdminLTE).",
@@ -34,7 +34,7 @@ export let projectsData = [
     },
     {
       id:4,
-      category:"Websites",
+      category:["Vue"],
       title:"Portfolio",
       image:require("@/assets/allenpage4.png"),
       objective:"It shows all the own projects that I made to show to companies or clients, this page is made with Vuejs.",

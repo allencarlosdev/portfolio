@@ -3,9 +3,9 @@
 
         <nav v-show="!isHome" class="content__nav">
             <router-link to="/portfolio" class="content__link"><i class="fa-solid fa-table-list"></i> All projects</router-link>
-            <router-link to="/templates" class="content__link"><i class="fa-solid fa-palette"></i> Templates</router-link>
-            <router-link to="/copycat" class="content__link"><i class="fa-solid fa-copy"></i> CopyCat Websites</router-link>
-            <router-link to="/complete-projects" class="content__link"><i class="fa-solid fa-laptop-code"></i> Complete projects</router-link>
+            <router-link to="/vue" class="content__link"><i class="fa-brands fa-vuejs"></i> Vue </router-link>
+            <router-link to="/laravel" class="content__link"><i class="fa-brands fa-laravel"></i> Laravel </router-link>
+            <router-link to="/vanilla" class="content__link"><i class="fa-solid fa-laptop-code"></i> Vanilla</router-link>
             <router-link to="/skill" class="content__link"><i class="fa-solid fa-book"></i> Skill</router-link>
         </nav>
         <router-view v-slot="{ Component }">
@@ -65,7 +65,7 @@
         color: var(--letter-color);
     }
 
-    .fa-solid {
+    .fa-solid, .fa-brands {
         margin-right: 0.313rem;
     }
 

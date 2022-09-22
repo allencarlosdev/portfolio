@@ -1,21 +1,21 @@
 <template>
-  <div class="copycat">
-    <div class="copycat__container">
+  <div class="vanilla">
+    <div class="vanilla__container">
       <transition-group
           appear=""
           tag="ul"
-          class="copycat__projects"
+          class="vanilla__projects"
           @before-enter="beforeEnter"
           @enter="enter"
         >       
-        <li class="copycat__page" v-for="(project, index) in filterProjects" :key="project.id" :data-index="index"  @mouseover="setIndex(index)" @mouseout="setIndex(false)">
-          <img :class="{'copycat__img':(indexId != index+1),'copycat__imghover':(indexId === index+1)}" :src="project.image" alt="image of Copycat list" loading="lazy">
-            <div class="copycat__card">
-              <h3 class="copycat__title">{{project.title}}</h3>
-              <p class="copycat__text">{{project.objective}}</p>
-              <div class="copycat__buttons">
-                <a rel="noopener noreferrer" :title="project.links.titleCode" class="copycat__btn" :href="project.links.hrefCode" target="_blank">Code</a>
-                  <a rel="noopener noreferrer" :title="project.links.titlePage" class="copycat__btn" :href="project.links.hrefPage" target="_blank">Website</a>
+        <li class="vanilla__page" v-for="(project, index) in filterProjects" :key="project.id" :data-index="index"  @mouseover="setIndex(index)" @mouseout="setIndex(false)">
+          <img :class="{'vanilla__img':(indexId != index+1),'vanilla__imghover':(indexId === index+1)}" :src="project.image" alt="image of complete projects list" loading="lazy">
+            <div class="vanilla__card">
+              <h3 class="vanilla__title">{{project.title}}</h3>
+              <p class="vanilla__text">{{project.objective}}</p>
+              <div class="vanilla__buttons">
+                <a rel="noopener noreferrer" :title="project.links.titleCode" class="vanilla__btn" :href="project.links.hrefCode" target="_blank">Code</a>
+                  <a rel="noopener noreferrer" :title="project.links.titlePage" class="vanilla__btn" :href="project.links.hrefPage" target="_blank">Website</a>
               </div>
             </div>
         </li>
@@ -28,10 +28,10 @@
 import gsap from 'gsap'
 import { projectsData } from '../components/projectsData.js'
   export default {
-    name: "copycat",
+    name: "vanilla",
     data(){
       return{
-        projects: projectsData,
+          projects : projectsData,
         indexId:'0',
       }
     },
@@ -54,7 +54,7 @@ import { projectsData } from '../components/projectsData.js'
     },
     computed: {
         filterProjects: function (){
-            return this.projects.filter(project => project.category === 'CopyCat')
+            return this.projects.filter(project => project.category.includes("Vanilla") === true)
         }
     }
     
@@ -62,7 +62,7 @@ import { projectsData } from '../components/projectsData.js'
 </script>
 
 <style scoped>
-  .copycat {
+  .vanilla {
     position: absolute;
     display: flex;
     justify-content: end;
@@ -72,7 +72,7 @@ import { projectsData } from '../components/projectsData.js'
   }
 
   /* All projects */
-  .copycat__container {
+  .vanilla__container {
     margin: 5rem 0;
     width: 90%;
     padding: 5rem;
@@ -80,7 +80,7 @@ import { projectsData } from '../components/projectsData.js'
     /* background: cyan; */
   }
 
-  .copycat__projects {
+  .vanilla__projects {
     display: grid;
     gap: 0.938rem;
     grid-template-columns: repeat(auto-fill, minmax(min(100%, 30rem), 1fr));
@@ -89,7 +89,7 @@ import { projectsData } from '../components/projectsData.js'
     /* background: lightgoldenrodyellow; */
   }
 
-  .copycat__page {
+  .vanilla__page {
     background-color: var(--background-footer);
     box-shadow: 0.125rem 0.125rem 0.375rem 0 var(--background-footer);
     border-radius: 1.25rem;
@@ -97,13 +97,13 @@ import { projectsData } from '../components/projectsData.js'
     overflow: hidden;
   }
 
-  .copycat__img {
+  .vanilla__img {
     width: 100%;
     height: 100%;
     border-radius: 1.25rem;
     transition: all 2s;
   }
-  .copycat__imghover {
+  .vanilla__imghover {
     width: 100%;
     height: 50%;
     border-radius: 1.25rem;
@@ -112,27 +112,27 @@ import { projectsData } from '../components/projectsData.js'
     transition: all 2s;
   }
 
-  .copycat__card {
+  .vanilla__card {
     display: block;
   }
   
-  .copycat__title {
+  .vanilla__title {
     margin: 1rem 0;
     font-size: 1rem;
     z-index: 5;
   }
 
-  .copycat__text {
+  .vanilla__text {
     font-size: 0.8rem;
     margin: 1rem;
   }
 
-  .copycat__buttons{
+  .vanilla__buttons{
     display: flex;
     justify-content: space-around;
   }
 
-  .copycat__btn {
+  .vanilla__btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -145,19 +145,20 @@ import { projectsData } from '../components/projectsData.js'
     border-radius: 0.5rem;
   }
 
-  .copycat__btn:hover {
+  .vanilla__btn:hover {
     background: var(--letter-color);
     color: var(--background-body);
   }
 
   @media screen and (max-width:1000px) {
-    .copycat__container {
+    .vanilla__container {
       width: 100%;
       padding: 5rem 2rem;
     }
   }
+
   @media screen and (max-width:500px) {
-    .copycat__container {
+    .vanilla__container {
       padding: 5rem 1rem;
     }
   }
