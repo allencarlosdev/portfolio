@@ -20,6 +20,13 @@
               </div>
           </li>       
         </transition-group>
+        <div class="pagination-container">
+          <ul class="pagination">
+            <li class="pagination__item" @click="getPreviousPage()"><a class="pagination__a" href="#">Previous</a></li>
+            <li class="pagination__item" v-for="page in totalPages()" :key="page.id" @click="getDataPage(page)"><a class="pagination__a" :class="isActive(page)" href="#">{{ page }}</a></li>
+            <li class="pagination__item" @click="getNextPage()"><a class="pagination__a" href="#">Next</a></li>
+          </ul>
+      </div>
       </div>
   </div>
 </template>
@@ -33,7 +40,13 @@ import { projectsData } from '../components/projectsData.js'
       return{
         projects : projectsData,
         indexId:'0',
+        elementByPage: 6,
+        dataPages:[],
+        currentPage: 1
       }
+    },
+    mounted(){
+      this.getDataPage(1);
     },
     methods:{
       setIndex(value){
@@ -50,6 +63,31 @@ import { projectsData } from '../components/projectsData.js'
           duration: 1.5,
           delay: el.dataset.index * 0.7,
         })
+      },
+      totalPages(){
+        return Math.ceil(this.projects.length/this.elementByPage)
+      },
+      getDataPage(numberPage){
+        this.currentPage = numberPage;
+        this.dataPages=[];
+        let start = (numberPage * this.elementByPage) - this.elementByPage;
+        let end = (numberPage * this.elementByPage);
+        this.dataPages = this.projects.slice(start, end);
+      },
+      getPreviousPage(){
+        if (this.currentPage > 1) {
+          this.currentPage--;
+        }
+        this.getDataPage(this.currentPage)
+      },
+      getNextPage(){
+        if (this.currentPage < this.totalPages()) {
+          this.currentPage++;
+        }
+        this.getDataPage(this.currentPage)
+      },
+      isActive(numberPage){
+        return numberPage == this.currentPage ? 'active': ''
       }
     }
   }
@@ -76,7 +114,7 @@ import { projectsData } from '../components/projectsData.js'
     display: grid;
     gap: 0.938rem;
     grid-template-columns: repeat(auto-fill, minmax(min(100%, 30rem), 1fr));
-    grid-auto-rows: minmax(10rem, 20rem);
+    grid-auto-rows: minmax(10rem, 18rem);
     /* background: lightgoldenrodyellow; */
   }
 
@@ -140,6 +178,25 @@ import { projectsData } from '../components/projectsData.js'
   .portfolio__btn:hover {
     background: var(--letter-color);
     color: var(--background-body);
+  }
+
+   @media screen and (min-width:2350px){
+    .portfolio__projects {
+      grid-template-columns: repeat(3, minmax(min(100%, 30rem), 1fr));
+      grid-auto-rows: minmax(10rem, 25rem);
+    }
+  }
+  
+  @media screen and (max-width:1700px) {
+    .portfolio__projects {
+      grid-template-columns: repeat(3, minmax(min(100%, 25rem), 1fr));
+      grid-auto-rows: minmax(10rem, 15rem);
+    }
+  }
+  @media screen and (max-width:1500px) {
+    .portfolio__projects {
+      grid-template-columns: repeat(auto-fill, minmax(min(100%, 25rem), 1fr));
+    }
   }
 
   @media screen and (max-width:1000px) {
