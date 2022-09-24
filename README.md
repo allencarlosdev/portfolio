@@ -1,7 +1,5 @@
 # Allenpage 4 - PORTFOLIO
 
-_**Number of pages for the portfolio :** 4/6_
-
 **Web Theme :**
 
 Portfolio web site
@@ -30,8 +28,6 @@ VUE CLI
 ## Image
 ![App Screenshot](https://github.com/allencarlosdev/portfolio/blob/main/src/assets/allenpage4.png)
 
------------------------------------------------------------------------------ LIVE EXAMPLE ----------------------------------------------------------------------
-
-https://allencarlosdev.com/
+ LIVE EXAMPLE : https://allencarlosdev.com/
 
 
