@@ -43,4 +43,26 @@ export let projectsData = [
         hrefPage :"https://allencarlosdev.com", titlePage:"Portfolio web of Carlos Allen",
       }
     },
+    {
+      id:5,
+      category:["Vanilla"],
+      title:"Memory Game",
+      image:require("@/assets/Memory-game.jpg"),
+      objective:"Create a mini memory game with javascript",
+      links:{
+        hrefCode:"https://github.com/allencarlosdev/Memory-Game", titleCode:"code on github page memory game",
+        hrefPage :"https://allencarlosdev.github.io/Memory-Game/", titlePage:"Memory Game",
+      }
+    },
+    {
+      id:6,
+      category:["Vanilla"],
+      title:"Movie Api",
+      image:require("@/assets/Movie-Api.png"),
+      objective:"Consume an API via Fetch in Javascript",
+      links:{
+        hrefCode:"https://github.com/allencarlosdev/movieApi", titleCode:"code on github page movie api game",
+        hrefPage :"https://allencarlosdev.github.io/movieApi/", titlePage:"Movie Api",
+      }
+    },
   ]
