@@ -20,36 +20,30 @@
             </div>
         </li>
       </transition-group>
-      <div class="pagination-container">
-        <ul class="pagination">
-          <li class="pagination__item" @click="getPreviousPage()"><a class="pagination__a" href="#">Previous</a></li>
-          <li class="pagination__item" v-for="page in totalPages()" :key="page.id" @click="getDataPage(page)"><a class="pagination__a" :class="isActive(page)" href="#">{{ page }}</a></li>
-          <li class="pagination__item" @click="getNextPage()"><a class="pagination__a" href="#">Next</a></li>
-        </ul>
-      </div>
+      <pagination category="Vanilla" @projectPages="filterData"></pagination>
     </div>
   </div>
 </template>
 
 <script>
 import gsap from 'gsap'
-import { projectsData } from '../components/projectsData.js'
+import pagination from '@/components/pagination.vue'
   export default {
     name: "vanilla",
+    components:{
+      pagination
+    },
     data(){
       return{
-        projects : projectsData,
         indexId:'0',
         indexId:'0',
-        elementByPage: 6,
-        dataPages:[],
-        currentPage: 1
+        filterProjects: [],
       }
     },
-    mounted(){
-      this.getDataPage(1);
-    },
     methods:{
+      filterData(value){
+        this.filterProjects = value;
+      },
       setIndex(value){
         this.indexId = (value === false) ? '0' : value + 1;
       },
@@ -64,39 +58,8 @@ import { projectsData } from '../components/projectsData.js'
           duration: 1.5,
           delay: el.dataset.index * 0.7,
         })
-      },
-      totalPages(){
-        return Math.ceil(this.filterProjects.length/this.elementByPage)
-      },
-      getDataPage(numberPage){
-        this.currentPage = numberPage;
-        this.dataPages=[];
-        let start = (numberPage * this.elementByPage) - this.elementByPage;
-        let end = (numberPage * this.elementByPage);
-        this.dataPages = this.filterProjects.slice(start, end);
-      },
-      getPreviousPage(){
-        if (this.currentPage > 1) {
-          this.currentPage--;
-        }
-        this.getDataPage(this.currentPage)
-      },
-      getNextPage(){
-        if (this.currentPage < this.totalPages()) {
-          this.currentPage++;
-        }
-        this.getDataPage(this.currentPage)
-      },
-      isActive(numberPage){
-        return numberPage == this.currentPage ? 'active': ''
       }
-    },
-    computed: {
-        filterProjects: function (){
-            return this.projects.filter(project => project.category.includes("Vanilla") === true)
-        }
     }
-    
   }
 </script>
 
