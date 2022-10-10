@@ -1,62 +1,29 @@
 <template>
   <div class="vue">
     <div class="vue__container">
-      <transition-group
-          appear=""
-          tag="ul"
-          class="vue__projects"
-          @before-enter="beforeEnter"
-          @enter="enter"
-        >       
-        <li class="vue__page" v-for="(project, index) in filterProjects" :key="project.id" :data-index="index"  @mouseover="setIndex(index)" @mouseout="setIndex(false)">
-          <img :class="{'vue__img':(indexId != index+1),'vue__imghover':(indexId === index+1)}" :src="project.image" alt="image of vue list">
-            <div class="vue__card">
-              <h3 class="vue__title">{{project.title}}</h3>
-              <p class="vue__text">{{project.objective}}</p>
-              <div class="vue__buttons">
-                  <a rel="noopener noreferrer" :title="project.links.titleCode" class="vue__btn" :href="project.links.hrefCode" target="_blank">Code</a>
-                  <a rel="noopener noreferrer" :title="project.links.titlePage" class="vue__btn" :href="project.links.hrefPage" target="_blank">Website</a>
-              </div>
-            </div>
-        </li>
-      </transition-group>
+      <projectList :filterProjects="filterProjects"></projectList>
       <pagination category="Vue" @projectPages="filterData"></pagination>
     </div>
   </div>
 </template>
 
 <script>
-import gsap from 'gsap'
 import pagination from '@/components/pagination.vue'
+import projectList from '@/components/projectList.vue'
   export default {
     name: "vue",
     components:{
-      pagination
+      pagination,
+      projectList
     },
     data(){
       return{
-        indexId:'0',
         filterProjects: [],
       }
     },
     methods:{
       filterData(value){
         this.filterProjects = value;
-      },
-      setIndex(value){
-        this.indexId = (value === false) ? '0' : value + 1;
-      },
-      beforeEnter(el) {
-        el.style.opacity = 0;
-        el.style.transform = 'translateY(60px)'
-      },
-      enter (el) {
-        gsap.to(el,{
-          opacity:1,
-          y:0,
-          duration: 1.5,
-          delay: el.dataset.index * 0.7,
-        })
       },
     },   
   }
@@ -81,94 +48,6 @@ import pagination from '@/components/pagination.vue'
     /* background: cyan; */
   }
 
-  .vue__projects {
-    display: grid;
-    gap: 0.938rem;
-    grid-template-columns: repeat(auto-fill, minmax(min(100%, 30rem), 1fr));
-    grid-auto-rows: minmax(10rem, 18rem);
-
-    /* background: lightgoldenrodyellow; */
-  }
-
-  .vue__page {
-    background-color: var(--background-footer);
-    box-shadow: 0.125rem 0.125rem 0.375rem 0 var(--background-footer);
-    border-radius: 1.25rem;
-    text-align: center;
-    overflow: hidden;
-  }
-
-  .vue__img {
-    width: 100%;
-    height: 100%;
-    border-radius: 1.25rem;
-    transition: all 2s;
-  }
-  .vue__imghover {
-    width: 100%;
-    height: 50%;
-    border-radius: 1.25rem;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-    transition: all 2s;
-  }
-
-  .vue__card {
-    display: block;
-  }
-  
-  .vue__title {
-    margin: 1rem 0;
-    font-size: 1rem;
-    z-index: 5;
-  }
-
-  .vue__text {
-    font-size: 0.8rem;
-    margin: 1rem;
-  }
-
-  .vue__buttons {
-    display: flex;
-    justify-content: space-around;
-  }
-
-  .vue__btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 6.25rem;
-    height: 1.875rem;
-    cursor: pointer;
-    color: var(--letter-color);
-    border: 0.25rem solid var(--letter-color);
-    border-radius: 0.5rem;
-  }
-
-  .vue__btn:hover {
-    background: var(--letter-color);
-    color: var(--background-body);
-  }
-
-   @media screen and (min-width:2350px){
-    .vue__projects {
-      grid-template-columns: repeat(3, minmax(min(100%, 30rem), 1fr));
-      grid-auto-rows: minmax(10rem, 25rem);
-    }
-  }
-  
-  @media screen and (max-width:1700px) {
-    .vue__projects {
-      grid-template-columns: repeat(3, minmax(min(100%, 25rem), 1fr));
-      grid-auto-rows: minmax(10rem, 15rem);
-    }
-  }
-  @media screen and (max-width:1500px) {
-    .vue__projects {
-      grid-template-columns: repeat(auto-fill, minmax(min(100%, 25rem), 1fr));
-    }
-  }
 
   @media screen and (max-width:1000px) {
     .vue__container {
