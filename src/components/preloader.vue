@@ -76,7 +76,7 @@
     }
 </script>
 
-<style>
+<style scoped>
     .cls-1 {
         fill: var(--preload-logo);
         }
