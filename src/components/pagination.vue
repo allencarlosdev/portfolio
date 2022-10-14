@@ -8,7 +8,7 @@
         </div>
 </template>
 <script>
-import { projectsData } from '../components/projectsData.js'
+import { projectsData } from '@/components/projectsData.js'
     export default {
         name:"pagination",
         props:{

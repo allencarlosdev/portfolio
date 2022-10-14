@@ -3,8 +3,8 @@
         <div class="allenblog__container">
             <h1 class="allenblog__h1">Sorry the project "AllenBlog" don't have public page</h1>
             <div class="allenblog__img">
-                <img class="allenblog__image" loading="lazy" src="../assets/allenpage3.png" alt="project 3 home">
-                <img class="allenblog__image" loading="lazy" src="../assets/adminallenpage3.png" alt="project 3 AdminLTE">
+                <img class="allenblog__image" loading="lazy" src="@/assets/allenpage3.png" alt="project 3 home">
+                <img class="allenblog__image" loading="lazy" src="@/assets/adminallenpage3.png" alt="project 3 AdminLTE">
             </div>
             <p class="allenblog__p">Reason: I don't have an international credit card (at the moment) for that, I couldn't create my Heroku account</p>
             <p class="allenblog__p">Installations: If you want to see this project you must install locally, for that you must first have the following programs installed.</p>

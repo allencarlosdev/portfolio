@@ -8,10 +8,10 @@
 </template>
 
 <script>
-  import preloader from './components/preloader.vue'
-  import HeaderView from './views/HeaderView.vue'
-  import ContentView from './views/ContentView.vue'
-  import FooterView from './views/FooterView.vue'
+  import preloader from '@/components/preloader.vue'
+  import HeaderView from '@/views/HeaderView.vue'
+  import ContentView from '@/views/ContentView.vue'
+  import FooterView from '@/views/FooterView.vue'
 
   export default {
     name:'App',

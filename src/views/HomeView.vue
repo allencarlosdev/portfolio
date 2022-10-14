@@ -1,7 +1,7 @@
 <template>
     <div class="home" @mousemove="mouseMove">
         <div class="home__landscape">
-            <img class="home__img" loading="lazy" src="../assets/landscape-background.svg" alt="landscape background">
+            <img class="home__img" loading="lazy" src="@/assets/landscape-background.svg" alt="landscape background">
         </div>
         <div class="home__title" :style="style">
             <h1 class="home__carlos">CARLOS ALLEN</h1>
@@ -9,7 +9,7 @@
         </div>
 
         <div class="home__animation">
-            <img class="home__img" src="../assets/landscape-animated.svg" alt="Landscape animated">
+            <img class="home__img" src="@/assets/landscape-animated.svg" alt="Landscape animated">
         </div>
 
         <div class="home__title home__title--front" :style="style">

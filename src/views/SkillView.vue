@@ -18,7 +18,7 @@
 
 <script>
 import gsap from 'gsap'
-import { skillsData } from '../components/skillsData.js'
+import { skillsData } from '@/components/skillsData.js'
   export default {
     name: "skill",
     data(){
