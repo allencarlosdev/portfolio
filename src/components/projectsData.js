@@ -65,4 +65,15 @@ export let projectsData = [
         hrefPage :"https://allencarlosdev.github.io/movieApi/", titlePage:"Movie Api",
       }
     },
+    {
+      id:7,
+      category:["Vue"],
+      title:"Weather Api",
+      image:require("@/assets/allenweatherapi.jpg"),
+      objective:"Consume Api in Vuejs",
+      links:{
+        hrefCode:"https://github.com/allencarlosdev/allenWeatherApi", titleCode:"code on github page weather api",
+        hrefPage :"https://allen-weather-api.netlify.app/", titlePage:"Weather Api",
+      }
+    },
   ]
