@@ -29,7 +29,7 @@ export let projectsData = [
       objective:"The goal is to create a complete page for both the backend part (Laravel-MySQL) and the frontend part (Livewire) with its respective administration panel (AdminLTE).",
       links:{
         hrefCode:"https://github.com/allencarlosdev/Allenpage3", titleCode:"code on github page 3",
-        hrefPage :"https://allencarlosdev.com/Allenblog", titlePage:"web page 3 - AllenBlog",
+        hrefPage :"https://allenpage3-production.up.railway.app/", titlePage:"web page 3 - AllenBlog",
       }
     },
     {
