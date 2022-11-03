@@ -76,4 +76,15 @@ export let projectsData = [
         hrefPage :"https://allen-weather-api.netlify.app/", titlePage:"Weather Api",
       }
     },
+    {
+      id:8,
+      category:["Vue"],
+      title:"Reactive forms",
+      image:require("@/assets/reactive-form.png"),
+      objective:"Create reactive forms on a single page",
+      links:{
+        hrefCode:"https://github.com/allencarlosdev/Reactive-forms", titleCode:"code on github for coffee form",
+        hrefPage :"https://coffee-form.netlify.app/", titlePage:"Coffee form",
+      }
+    },
   ]
