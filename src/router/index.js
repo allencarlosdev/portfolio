@@ -37,11 +37,6 @@ const routes = [
     name: 'skill',
     component: () => import('../views/SkillView.vue')
   },
-  {
-    path: '/allenblog',
-    name: 'allenblog',
-    component: () => import('../views/AllenblogView.vue')
-  },
 ]
 
 const router = createRouter({
