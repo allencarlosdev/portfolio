@@ -1,28 +1,6 @@
 export let projectsData = [
     {
       id:1,
-      category:["Laravel", "Vanilla"],
-      title:"Allenpage1",
-      image:require("@/assets/allenpage1.png"),
-      objective:"My goal as a programmer for this static page was to make it as simple as possible without using methodologies, libraries etc.",
-      links:{
-        hrefCode:"https://github.com/allencarlosdev/Allenpage1", titleCode:"code on github page 1",
-        hrefPage :"https://allencarlosdev.github.io/page1/", titlePage:"web page 1",
-      }
-    },
-    {
-      id:2,
-      category:["Laravel", "Vanilla"],
-      title:"Allenpage2",
-      image:require("@/assets/allenpage2.png"),
-      objective:"the goal of this static page is to try to replicate the original page but with some subtle changes in addition to using BEM methodology.",
-      links:{
-        hrefCode:"https://github.com/allencarlosdev/Allenpage2", titleCode:"code on github page 2",
-        hrefPage :"https://allencarlosdev.github.io/page2/", titlePage:"web page 2 - valorant",
-      }
-    },
-    {
-      id:3,
       category:["Laravel"],
       title:"Allenpage3",
       image:require("@/assets/allenpage3.svg"),
@@ -33,7 +11,7 @@ export let projectsData = [
       }
     },
     {
-      id:4,
+      id:2,
       category:["Vue"],
       title:"Portfolio",
       image:require("@/assets/allenpage4.png"),
@@ -41,6 +19,28 @@ export let projectsData = [
       links:{
         hrefCode:"https://github.com/allencarlosdev/portfolio", titleCode:"code on github page portfolio",
         hrefPage :"https://allencarlosdev.com", titlePage:"Portfolio web of Carlos Allen",
+      }
+    },
+    {
+      id:3,
+      category:["Vue"],
+      title:"Weather Api",
+      image:require("@/assets/allenweatherapi.jpg"),
+      objective:"Consume Api in Vuejs",
+      links:{
+        hrefCode:"https://github.com/allencarlosdev/allenWeatherApi", titleCode:"code on github page weather api",
+        hrefPage :"https://allen-weather-api.netlify.app/", titlePage:"Weather Api",
+      }
+    },
+    {
+      id:4,
+      category:["Laravel", "Vanilla"],
+      title:"Allenpage2",
+      image:require("@/assets/allenpage2.png"),
+      objective:"the goal of this static page is to try to replicate the original page but with some subtle changes in addition to using BEM methodology.",
+      links:{
+        hrefCode:"https://github.com/allencarlosdev/Allenpage2", titleCode:"code on github page 2",
+        hrefPage :"https://allencarlosdev.github.io/page2/", titlePage:"web page 2 - valorant",
       }
     },
     {
@@ -67,13 +67,13 @@ export let projectsData = [
     },
     {
       id:7,
-      category:["Vue"],
-      title:"Weather Api",
-      image:require("@/assets/allenweatherapi.jpg"),
-      objective:"Consume Api in Vuejs",
+      category:["Laravel", "Vanilla"],
+      title:"Allenpage1",
+      image:require("@/assets/allenpage1.png"),
+      objective:"My goal as a programmer for this static page was to make it as simple as possible without using methodologies, libraries etc.",
       links:{
-        hrefCode:"https://github.com/allencarlosdev/allenWeatherApi", titleCode:"code on github page weather api",
-        hrefPage :"https://allen-weather-api.netlify.app/", titlePage:"Weather Api",
+        hrefCode:"https://github.com/allencarlosdev/Allenpage1", titleCode:"code on github page 1",
+        hrefPage :"https://allencarlosdev.github.io/page1/", titlePage:"web page 1",
       }
     },
     {
