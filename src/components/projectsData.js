@@ -34,6 +34,17 @@ export let projectsData = [
     },
     {
       id:4,
+      category:["Laravel"],
+      title:"Post-it",
+      image:require("@/assets/post-it.png"),
+      objective:"Create post-it application",
+      links:{
+        hrefCode:"https://github.com/allencarlosdev/Allen-post-it", titleCode:"code on github for post-it",
+        hrefPage :"https://allen-post-it-production.up.railway.app/", titlePage:"Post-it Application",
+      }
+    },
+    {
+      id:5,
       category:["Laravel", "Vanilla"],
       title:"Allenpage2",
       image:require("@/assets/allenpage2.png"),
@@ -44,7 +55,7 @@ export let projectsData = [
       }
     },
     {
-      id:5,
+      id:6,
       category:["Vanilla"],
       title:"Memory Game",
       image:require("@/assets/Memory-game.jpg"),
@@ -55,7 +66,7 @@ export let projectsData = [
       }
     },
     {
-      id:6,
+      id:7,
       category:["Vanilla"],
       title:"Movie Api",
       image:require("@/assets/Movie-Api.png"),
@@ -66,7 +77,7 @@ export let projectsData = [
       }
     },
     {
-      id:7,
+      id:8,
       category:["Laravel", "Vanilla"],
       title:"Allenpage1",
       image:require("@/assets/allenpage1.png"),
@@ -77,7 +88,7 @@ export let projectsData = [
       }
     },
     {
-      id:8,
+      id:9,
       category:["Vue"],
       title:"Reactive forms",
       image:require("@/assets/reactive-form.png"),
