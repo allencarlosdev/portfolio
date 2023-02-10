@@ -18,7 +18,7 @@ export let projectsData = [
       objective:"Create reactive forms on a single page",
       links:{
         hrefCode:"https://github.com/allencarlosdev/Reactive-forms", titleCode:"code on github for coffee form",
-        hrefPage :"https://coffee-form.netlify.app/", titlePage:"Coffee form",
+        hrefPage :"https://reactive-forms-aow4qxb7q-allencarlosdev.vercel.app/", titlePage:"Coffee form",
       }
     },
     {
