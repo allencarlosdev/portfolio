@@ -5,7 +5,8 @@
             <router-link to="/portfolio" class="content__link"><i class="fa-solid fa-table-list"></i> All projects</router-link>
             <router-link to="/vue" class="content__link"><i class="fa-brands fa-vuejs"></i> Vue </router-link>
             <router-link to="/laravel" class="content__link"><i class="fa-brands fa-laravel"></i> Laravel </router-link>
-            <router-link to="/vanilla" class="content__link"><i class="fa-solid fa-laptop-code"></i> Vanilla</router-link>
+            <router-link to="/vanilla" class="content__link"><i class="fa-brands fa-js"></i> Vanilla JS</router-link>
+            <router-link to="/node" class="content__link"><i class="fa-solid fa-server"></i> Node JS</router-link>
             <router-link to="/skill" class="content__link"><i class="fa-solid fa-book"></i> Skill</router-link>
         </nav>
         <router-view v-slot="{ Component }">

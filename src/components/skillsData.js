@@ -59,4 +59,9 @@ export let skillsData = [
       title:"TAILWINDCSS",
       image:require("@/assets/skill/tailwind.svg"),
     },
+    {
+      id:13,
+      title:"NODEJS",
+      image:require("@/assets/skill/nodejs.svg"),
+    },
   ]

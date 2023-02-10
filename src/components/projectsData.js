@@ -13,12 +13,12 @@ export let projectsData = [
     {
       id:2,
       category:["Vue"],
-      title:"Portfolio",
-      image:require("@/assets/allenpage4.png"),
-      objective:"It shows all the own projects that I made to show to companies or clients, this page is made with Vuejs.",
+      title:"Reactive forms",
+      image:require("@/assets/reactive-form.png"),
+      objective:"Create reactive forms on a single page",
       links:{
-        hrefCode:"https://github.com/allencarlosdev/portfolio", titleCode:"code on github page portfolio",
-        hrefPage :"https://allencarlosdev.com", titlePage:"Portfolio web of Carlos Allen",
+        hrefCode:"https://github.com/allencarlosdev/Reactive-forms", titleCode:"code on github for coffee form",
+        hrefPage :"https://coffee-form.netlify.app/", titlePage:"Coffee form",
       }
     },
     {
@@ -45,7 +45,7 @@ export let projectsData = [
     },
     {
       id:5,
-      category:["Laravel", "Vanilla"],
+      category:["Laravel"],
       title:"Allenpage2",
       image:require("@/assets/allenpage2.png"),
       objective:"the goal of this static page is to try to replicate the original page but with some subtle changes in addition to using BEM methodology.",
@@ -78,7 +78,7 @@ export let projectsData = [
     },
     {
       id:8,
-      category:["Laravel", "Vanilla"],
+      category:["Laravel"],
       title:"Allenpage1",
       image:require("@/assets/allenpage1.png"),
       objective:"My goal as a programmer for this static page was to make it as simple as possible without using methodologies, libraries etc.",
@@ -90,12 +90,12 @@ export let projectsData = [
     {
       id:9,
       category:["Vue"],
-      title:"Reactive forms",
-      image:require("@/assets/reactive-form.png"),
-      objective:"Create reactive forms on a single page",
+      title:"Portfolio",
+      image:require("@/assets/allenpage4.png"),
+      objective:"It shows all the own projects that I made to show to companies or clients, this page is made with Vuejs.",
       links:{
-        hrefCode:"https://github.com/allencarlosdev/Reactive-forms", titleCode:"code on github for coffee form",
-        hrefPage :"https://coffee-form.netlify.app/", titlePage:"Coffee form",
+        hrefCode:"https://github.com/allencarlosdev/portfolio", titleCode:"code on github page portfolio",
+        hrefPage :"https://allencarlosdev.com", titlePage:"Portfolio web of Carlos Allen",
       }
     },
   ]
