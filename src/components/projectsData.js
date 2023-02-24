@@ -2,12 +2,12 @@ export let projectsData = [
     {
       id:1,
       category:["Laravel"],
-      title:"Allenpage3",
+      title:"Allenpage3 (Back-End + Front-End)",
       image:require("@/assets/allenpage3.svg"),
       objective:"The goal is to create a complete page for both the backend part (Laravel-MySQL) and the frontend part (Livewire) with its respective administration panel (AdminLTE).",
       links:{
         hrefCode:"https://github.com/allencarlosdev/Allenpage3", titleCode:"code on github page 3",
-        hrefPage :"https://allenpage3-production.up.railway.app/", titlePage:"web page 3 - AllenBlog",
+        hrefPage :"https://allenpage3-production.up.railway.app/", titlePage:"web page 3 - AllenBlog (Back-End + Front-End)",
       }
     },
     {
@@ -23,17 +23,28 @@ export let projectsData = [
     },
     {
       id:3,
-      category:["Vue"],
-      title:"Weather Api",
-      image:require("@/assets/allenweatherapi.jpg"),
-      objective:"Consume Api in Vuejs",
+      category:["Node"],
+      title:"Api Rest - player music (Back-End)",
+      image:require("@/assets/APIREST.jpeg"),
+      objective:"Create an API Rest in Node with Express it also has an AUTH system with JWT",
       links:{
-        hrefCode:"https://github.com/allencarlosdev/allenWeatherApi", titleCode:"code on github page weather api",
-        hrefPage :"https://allen-weather-api.netlify.app/", titlePage:"Weather Api",
+        hrefCode:"https://github.com/allencarlosdev/player-music-backend", titleCode:"code on github for coffee form",
+        hrefPage :"https://github.com/allencarlosdev/player-music-backend", titlePage:"Player music API REST (Back-End)",
       }
     },
     {
       id:4,
+      category:["Vue"],
+      title:"Weather Api (Front-End)" ,
+      image:require("@/assets/allenweatherapi.jpg"),
+      objective:"Consume Api in Vuejs",
+      links:{
+        hrefCode:"https://github.com/allencarlosdev/allenWeatherApi", titleCode:"code on github page weather api",
+        hrefPage :"https://allen-weather-api.netlify.app/", titlePage:"Weather Api (Front-End)",
+      }
+    },
+    {
+      id:5,
       category:["Laravel"],
       title:"Post-it",
       image:require("@/assets/post-it.png"),
@@ -44,7 +55,7 @@ export let projectsData = [
       }
     },
     {
-      id:5,
+      id:6,
       category:["Laravel"],
       title:"Allenpage2",
       image:require("@/assets/allenpage2.png"),
@@ -55,7 +66,7 @@ export let projectsData = [
       }
     },
     {
-      id:6,
+      id:7,
       category:["Vanilla"],
       title:"Memory Game",
       image:require("@/assets/Memory-game.jpg"),
@@ -66,18 +77,18 @@ export let projectsData = [
       }
     },
     {
-      id:7,
+      id:8,
       category:["Vanilla"],
-      title:"Movie Api",
+      title:"Movie Api (Front-End)",
       image:require("@/assets/Movie-Api.png"),
       objective:"Consume an API via Fetch in Javascript",
       links:{
         hrefCode:"https://github.com/allencarlosdev/movieApi", titleCode:"code on github page movie api game",
-        hrefPage :"https://allencarlosdev.github.io/movieApi/", titlePage:"Movie Api",
+        hrefPage :"https://allencarlosdev.github.io/movieApi/", titlePage:"Movie Api (Front-End)",
       }
     },
     {
-      id:8,
+      id:9,
       category:["Laravel"],
       title:"Allenpage1",
       image:require("@/assets/allenpage1.png"),
@@ -88,7 +99,7 @@ export let projectsData = [
       }
     },
     {
-      id:9,
+      id:10,
       category:["Vue"],
       title:"Portfolio",
       image:require("@/assets/allenpage4.png"),
