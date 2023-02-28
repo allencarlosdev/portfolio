@@ -1,7 +1,7 @@
 <template>
     <footer class="footer">
         <button class="footer__btn footer__btn--cv">
-            <a rel="noopener noreferrer" href="https://drive.google.com/uc?export=download&id=19xaL8FsPxEmTFFVr_K6KlrZAaLqBthad" download="Carlos-Allen-CV" class="footer__link"><i class="fa-solid fa-circle-down"></i>Download CV</a>
+            <a rel="noopener noreferrer" href="https://drive.google.com/uc?export=download&id=1h57iXIO9Z5MxBCGsOhyzHLuiudLMHSoo" download="Carlos-Allen-CV" class="footer__link"><i class="fa-solid fa-circle-down"></i>Download CV</a>
         </button>
         <div class="footer__email">
             <p class="footer__p"><i class="fa-solid fa-envelope"></i> allencarlosdev@gmail.com </p>
