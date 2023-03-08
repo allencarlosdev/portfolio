@@ -51,7 +51,7 @@ export let projectsData = [
       objective:"Create post-it application",
       links:{
         hrefCode:"https://github.com/allencarlosdev/Allen-post-it", titleCode:"code on github for post-it",
-        hrefPage :"https://allen-post-it-production.up.railway.app/", titlePage:"Post-it Application",
+        hrefPage :"https://post-it.fly.dev/", titlePage:"Post-it Application",
       }
     },
     {
