@@ -2,9 +2,9 @@ export let projectsData = [
     {
       id:1,
       category:["Laravel"],
-      title:"Allenpage3 (Back-End + Front-End)",
+      title:'Allenpage3 (Back-End + Front-End) "Monolithic"',
       image:require("@/assets/allenpage3.svg"),
-      objective:"The goal is to create a complete page for both the backend part (Laravel-MySQL) and the frontend part (Livewire) with its respective administration panel (AdminLTE).",
+      objective:"Monolithic application (Laravel-MySQL) and the frontend part (Livewire) with its respective administration panel (AdminLTE).",
       links:{
         hrefCode:"https://github.com/allencarlosdev/Allenpage3", titleCode:"code on github page 3",
         hrefPage :"https://allen-blog.fly.dev/", titlePage:"web page 3 - AllenBlog (Back-End + Front-End)",
@@ -13,7 +13,7 @@ export let projectsData = [
     {
       id:2,
       category:["Vue"],
-      title:"Reactive forms",
+      title:"Reactive forms (Front-End)",
       image:require("@/assets/reactive-form.png"),
       objective:"Create reactive forms on a single page",
       links:{
@@ -23,30 +23,30 @@ export let projectsData = [
     },
     {
       id:3,
-      category:["Node"],
-      title:"Api Rest - player music (Back-End)",
-      image:require("@/assets/APIREST.jpeg"),
-      objective:"Create an API Rest in Node with Express it also has an AUTH system with JWT",
+      category:["Laravel"],
+      title:"Api Rest - allen stories (Back-End)",
+      image:require("@/assets/API-LARAVEL.svg"),
+      objective:"Create an API Rest in Laravel",
       links:{
-        hrefCode:"https://github.com/allencarlosdev/player-music-backend", titleCode:"code on github for coffee form",
-        hrefPage :"https://github.com/allencarlosdev/player-music-backend", titlePage:"Player music API REST (Back-End)",
+        hrefCode:"https://github.com/allencarlosdev/allen-stories-api", titleCode:"code on github for API LARAVEL Allen-stories",
+        hrefPage :"https://api-allen-stories.000webhostapp.com/api/stories", titlePage:" API LARAVEL Allen-stories (Back-End)",
       }
     },
     {
       id:4,
       category:["Vue"],
-      title:"Weather Api (Front-End)" ,
-      image:require("@/assets/allenweatherapi.jpg"),
-      objective:"Consume Api in Vuejs",
+      title:"Allen-stories Consume my own API (Front-End)" ,
+      image:require("@/assets/allen-stories.png"),
+      objective:"complete project Backend and frontend with own API",
       links:{
-        hrefCode:"https://github.com/allencarlosdev/allenWeatherApi", titleCode:"code on github page weather api",
-        hrefPage :"https://allen-weather-api.netlify.app/", titlePage:"Weather Api (Front-End)",
+        hrefCode:"https://github.com/allencarlosdev/allen-stories", titleCode:"code on github page allen-stories",
+        hrefPage :"https://allen-stories.netlify.app/", titlePage:"Allen-stories (Front-End)",
       }
     },
     {
       id:5,
       category:["Laravel"],
-      title:"Post-it",
+      title:'Post-it (Back-End + Front-End) "Monolithic"',
       image:require("@/assets/post-it.png"),
       objective:"Create post-it application",
       links:{
@@ -57,7 +57,7 @@ export let projectsData = [
     {
       id:6,
       category:["Laravel"],
-      title:"Allenpage2",
+      title:"Allenpage2 (Front-End)",
       image:require("@/assets/allenpage2.png"),
       objective:"the goal of this static page is to try to replicate the original page but with some subtle changes in addition to using BEM methodology.",
       links:{
@@ -68,7 +68,7 @@ export let projectsData = [
     {
       id:7,
       category:["Vanilla"],
-      title:"Memory Game",
+      title:"Memory Game (Front-End)",
       image:require("@/assets/Memory-game.jpg"),
       objective:"Create a mini memory game with javascript",
       links:{
@@ -79,7 +79,7 @@ export let projectsData = [
     {
       id:8,
       category:["Vanilla"],
-      title:"Movie Api (Front-End)",
+      title:"Movie consume an Api (Front-End)",
       image:require("@/assets/Movie-Api.png"),
       objective:"Consume an API via Fetch in Javascript",
       links:{
@@ -90,7 +90,7 @@ export let projectsData = [
     {
       id:9,
       category:["Laravel"],
-      title:"Allenpage1",
+      title:"Allenpage1 (Front-End)",
       image:require("@/assets/allenpage1.png"),
       objective:"My goal as a programmer for this static page was to make it as simple as possible without using methodologies, libraries etc.",
       links:{
@@ -101,6 +101,39 @@ export let projectsData = [
     {
       id:10,
       category:["Vue"],
+      title:"Ricky and Morty Consume an Api (Front-End)",
+      image:require("@/assets/ricky-and-morty.png"),
+      objective:"Consume an Api about Ricky and Morty.",
+      links:{
+        hrefCode:"https://github.com/allencarlosdev/rick-and-morty", titleCode:"code on github page Ricky and Morty",
+        hrefPage :"https://ricky-and-morty-allen.netlify.app/", titlePage:"Ricky and Morty API (Front-End)",
+      }
+    },
+    {
+      id:11,
+      category:["Node"],
+      title:"Api Rest - player music (Back-End)",
+      image:require("@/assets/API-NODE.svg"),
+      objective:"Create an API Rest in Node with Express it also has an AUTH system with JWT",
+      links:{
+        hrefCode:"https://github.com/allencarlosdev/player-music-backend", titleCode:"code on github for player music",
+        hrefPage :"https://github.com/allencarlosdev/player-music-backend", titlePage:"Player music API REST (Back-End)",
+      }
+    },
+    {
+      id:12,
+      category:["Vue"],
+      title:"Weather consume an Api (Front-End)" ,
+      image:require("@/assets/allenweatherapi.jpg"),
+      objective:"Consume Api in Vuejs",
+      links:{
+        hrefCode:"https://github.com/allencarlosdev/allenWeatherApi", titleCode:"code on github page weather api",
+        hrefPage :"https://allen-weather-api.netlify.app/", titlePage:"Weather Api (Front-End)",
+      }
+    },
+    {
+      id:13,
+      category:["Vue"],
       title:"Portfolio",
       image:require("@/assets/allenpage4.png"),
       objective:"It shows all the own projects that I made to show to companies or clients, this page is made with Vuejs.",
@@ -109,4 +142,5 @@ export let projectsData = [
         hrefPage :"https://allencarlosdev.com", titlePage:"Portfolio web of Carlos Allen",
       }
     },
+    
   ]
