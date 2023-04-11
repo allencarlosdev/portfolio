@@ -6,16 +6,16 @@
         @before-enter="beforeEnter"
         @enter="enter"
     >
-        <li class="projects__page" v-for="(project, index) in filterProjects" :key="project.id" :data-index="index"  @mouseover="setIndex(index)" @mouseout="setIndex(false)">
-        <img :class="{'projects__img':(indexId != index+1),'projects__imghover':(indexId === index+1)}" :src="project.image" alt="image of all projects list" loading="lazy">
-            <div class="projects__card">
+        <li class="projects__page" v-for="(project, index) in filterProjects" :key="project.id" :data-index="index">
+          <img class="projects__img" :src="project.image" alt="image of all projects list" loading="lazy">
+          <div class="projects__card">
             <h3 class="projects__title">{{project.title}}</h3>
             <p class="projects__text">{{project.objective}}</p>
             <div class="projects__buttons">
-                <a rel="noopener noreferrer" :title="project.links.titleCode" class="projects__btn" :href="project.links.hrefCode" target="_blank">Code</a>
-                <a rel="noopener noreferrer" :title="project.links.titlePage" class="projects__btn" :href="project.links.hrefPage" target="_blank">Website</a>
+              <a rel="noopener noreferrer" :title="project.links.titleCode" class="projects__btn" :href="project.links.hrefCode" target="_blank">Code</a>
+              <a rel="noopener noreferrer" :title="project.links.titlePage" class="projects__btn" :href="project.links.hrefPage" target="_blank">Website</a>
             </div>
-            </div>
+          </div>
         </li>       
     </transition-group>
 </template>
@@ -26,15 +26,7 @@ import gsap from 'gsap'
         props:{
             filterProjects: Object
         },
-        data(){
-            return{
-                indexId:'0',
-            }
-        },
         methods: {
-        setIndex(value){
-          this.indexId = (value === false) ? '0' : value + 1;
-        },
         beforeEnter(el) {
           el.style.opacity = 0;
           el.style.transform = 'translateY(60px)'
@@ -73,19 +65,20 @@ import gsap from 'gsap'
     border-radius: 1.25rem;
     transition: all 2s;
   }
-  .projects__imghover {
-    width: 100%;
-    height: 50%;
-    border-radius: 1.25rem;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-    transition: all 2s;
-  }
 
   .projects__card {
     display: block;
   }
   
+  .projects__page:hover .projects__img{
+      width: 100%;
+      height: 50%;
+      border-radius: 1.25rem;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      transition: all 2s;
+
+  }
 
   .projects__title {
     margin: 1rem 0;
@@ -94,6 +87,7 @@ import gsap from 'gsap'
   }
 
   .projects__text {
+    font-family: var(--font-card);
     font-size: 0.8rem;
     margin: 1rem;
   }
