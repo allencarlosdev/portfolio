@@ -12,6 +12,17 @@ export let projectsData = [
     },
     {
       id:2,
+      category:["Wordpress"],
+      title:'Allen College - (Back-End + Front-End) "wordpress"',
+      image:require("@/assets/colegio-allen.jpg"),
+      objective:"creating a website for a school with wordpress",
+      links:{
+        hrefCode:"https://github.com/allencarlosdev/colegio-allen", titleCode:"code on github Allen-collegue",
+        hrefPage :"https://colegioallen.000webhostapp.com/", titlePage:"Allen-collegue (WordPress)",
+      }
+    },
+    {
+      id:3,
       category:["Laravel"],
       title:'Allenpage3 (Back-End + Front-End) "Monolithic"',
       image:require("@/assets/allenpage3.svg"),
@@ -22,7 +33,7 @@ export let projectsData = [
       }
     },
     {
-      id:3,
+      id:4,
       category:["Vue"],
       title:"Reactive forms (Front-End)",
       image:require("@/assets/reactive-form.png"),
@@ -33,7 +44,7 @@ export let projectsData = [
       }
     },
     {
-      id:4,
+      id:5,
       category:["Laravel"],
       title:"Api Rest - allen stories (Back-End)",
       image:require("@/assets/API-LARAVEL.svg"),
@@ -44,7 +55,7 @@ export let projectsData = [
       }
     },
     {
-      id:5,
+      id:6,
       category:["Vue"],
       title:"Allen-stories Consume my own API (Front-End)" ,
       image:require("@/assets/allen-stories.png"),
@@ -55,7 +66,7 @@ export let projectsData = [
       }
     },
     {
-      id:6,
+      id:7,
       category:["Laravel"],
       title:'Post-it (Back-End + Front-End) "Monolithic"',
       image:require("@/assets/post-it.png"),
@@ -66,7 +77,7 @@ export let projectsData = [
       }
     },
     {
-      id:7,
+      id:8,
       category:["Laravel"],
       title:"Allenpage2 (Front-End)",
       image:require("@/assets/allenpage2.png"),
@@ -77,7 +88,7 @@ export let projectsData = [
       }
     },
     {
-      id:8,
+      id:9,
       category:["Vanilla"],
       title:"Memory Game (Front-End)",
       image:require("@/assets/Memory-game.jpg"),
@@ -88,7 +99,7 @@ export let projectsData = [
       }
     },
     {
-      id:9,
+      id:10,
       category:["Vanilla"],
       title:"Movie consume an Api (Front-End)",
       image:require("@/assets/Movie-Api.png"),
@@ -99,7 +110,7 @@ export let projectsData = [
       }
     },
     {
-      id:10,
+      id:11,
       category:["Laravel"],
       title:"Allenpage1 (Front-End)",
       image:require("@/assets/allenpage1.png"),
@@ -110,7 +121,7 @@ export let projectsData = [
       }
     },
     {
-      id:11,
+      id:12,
       category:["Vue"],
       title:"Ricky and Morty Consume an Api (Front-End)",
       image:require("@/assets/ricky-and-morty.png"),
@@ -121,7 +132,7 @@ export let projectsData = [
       }
     },
     {
-      id:12,
+      id:13,
       category:["Node"],
       title:"Api Rest - player music (Back-End)",
       image:require("@/assets/API-NODE.svg"),
@@ -132,7 +143,7 @@ export let projectsData = [
       }
     },
     {
-      id:13,
+      id:14,
       category:["Vue"],
       title:"Weather consume an Api (Front-End)" ,
       image:require("@/assets/allenweatherapi.jpg"),
@@ -143,7 +154,7 @@ export let projectsData = [
       }
     },
     {
-      id:14,
+      id:15,
       category:["Vue"],
       title:"Portfolio",
       image:require("@/assets/allenpage4.png"),

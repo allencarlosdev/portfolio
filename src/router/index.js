@@ -38,6 +38,11 @@ const routes = [
     component: () => import( '../views/NodeView.vue')
   },
   {
+    path: '/wordpress',
+    name: 'wordpress',
+    component: () => import( '../views/WordpressView.vue')
+  },
+  {
     path: '/skill',
     name: 'skill',
     component: () => import('../views/SkillView.vue')

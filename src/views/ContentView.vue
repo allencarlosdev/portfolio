@@ -7,6 +7,7 @@
             <router-link to="/laravel" class="content__link"><i class="fa-brands fa-laravel"></i> Laravel </router-link>
             <router-link to="/vanilla" class="content__link"><i class="fa-brands fa-js"></i> Vanilla JS</router-link>
             <router-link to="/node" class="content__link"><i class="fa-solid fa-server"></i> Node JS</router-link>
+            <router-link to="/wordpress" class="content__link"><i class="fa-brands fa-wordpress"></i> WordPress</router-link>
             <router-link to="/skill" class="content__link"><i class="fa-solid fa-book"></i> Skill</router-link>
         </nav>
         <router-view v-slot="{ Component }">
@@ -42,7 +43,7 @@
         width: 10%;
         z-index: 4;
         padding: 2rem;
-        gap: 2rem;
+        gap: 1.5rem;
         flex-direction: column;
         /* align-self: center; */
         top: 30%;
