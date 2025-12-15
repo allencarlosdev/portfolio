@@ -7,6 +7,10 @@
         @enter="enter"
     >
         <li class="projects__page" v-for="(project, index) in filterProjects" :key="project.id" :data-index="index">
+          <div class="projects__badges">
+            <span class="projects__badge projects__badge--year">{{ project.year }}</span>
+            <span v-if="project.recommended" class="projects__badge projects__badge--recommended">⭐ Recommended</span>
+          </div>
           <img class="projects__img" :src="project.image" alt="image of all projects list" loading="lazy">
           <div class="projects__card">
             <h3 class="projects__title">{{project.title}}</h3>
@@ -52,11 +56,52 @@ import gsap from 'gsap'
   }
 
   .projects__page {
+    position: relative;
     background-color: var(--background-footer);
     box-shadow: 0.125rem 0.125rem 0.375rem 0 var(--background-footer);
     border-radius: 1.25rem;
     text-align: center;
     overflow: hidden;
+  }
+
+  .projects__badges {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    z-index: 10;
+  }
+
+  .projects__badge {
+    padding: 0.375rem 0.75rem;
+    border-radius: 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0.125rem 0.375rem rgba(0, 0, 0, 0.2);
+  }
+
+  .projects__badge--year {
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+  }
+
+  .projects__badge--recommended {
+    background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+    color: #333;
+    animation: pulse 2s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
   }
 
   .projects__img {
@@ -131,6 +176,19 @@ import gsap from 'gsap'
   @media screen and (max-width:1500px) {
     .projects__transition {
       grid-template-columns: repeat(auto-fill, minmax(min(100%, 25rem), 1fr));
+    }
+  }
+
+  @media screen and (max-width:500px) {
+    .projects__badges {
+      top: 0.5rem;
+      right: 0.5rem;
+      gap: 0.375rem;
+    }
+
+    .projects__badge {
+      padding: 0.25rem 0.5rem;
+      font-size: 0.65rem;
     }
   }
 
