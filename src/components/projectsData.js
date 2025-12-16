@@ -31,7 +31,7 @@ export let projectsData = [
       title:'Allen College - (Back-End + Front-End) "wordpress"',
       image:require("@/assets/colegio-allen.jpg"),
       objective:"creating a website for a school with wordpress",
-      year: 2022,
+      year: 2023,
       recommended: false,
       links:{
         hrefCode:"https://github.com/allencarlosdev/colegio-allen", titleCode:"code on github Allen-collegue",
@@ -44,7 +44,7 @@ export let projectsData = [
       title:'Allenpage3 (Back-End + Front-End) "Monolithic"',
       image:require("@/assets/allenpage3.svg"),
       objective:"Monolithic application (Laravel-MySQL) and the frontend part (Livewire) with its respective administration panel (AdminLTE).",
-      year: 2023,
+      year: 2022,
       recommended: false,
       links:{
         hrefCode:"https://github.com/allencarlosdev/Allenpage3", titleCode:"code on github page 3",
@@ -57,7 +57,7 @@ export let projectsData = [
       title:"Reactive forms (Front-End)",
       image:require("@/assets/reactive-form.png"),
       objective:"Create reactive forms on a single page",
-      year: 2023,
+      year: 2022,
       recommended: false,
       links:{
         hrefCode:"https://github.com/allencarlosdev/Reactive-forms", titleCode:"code on github for coffee form",
@@ -161,7 +161,7 @@ export let projectsData = [
       title:"Ricky and Morty Consume an Api (Front-End)",
       image:require("@/assets/ricky-and-morty.png"),
       objective:"Consume an Api about Ricky and Morty.",
-      year: 2022,
+      year: 2023,
       recommended: false,
       links:{
         hrefCode:"https://github.com/allencarlosdev/rick-and-morty", titleCode:"code on github page Ricky and Morty",
@@ -174,7 +174,7 @@ export let projectsData = [
       title:"Api Rest - player music (Back-End)",
       image:require("@/assets/API-NODE.svg"),
       objective:"Create an API Rest in Node with Express it also has an AUTH system with JWT",
-      year: 2022,
+      year: 2023,
       recommended: false,
       links:{
         hrefCode:"https://github.com/allencarlosdev/player-music-backend", titleCode:"code on github for player music",
@@ -200,7 +200,7 @@ export let projectsData = [
       title:"Portfolio",
       image:require("@/assets/allenpage4.png"),
       objective:"It shows all the own projects that I made to show to companies or clients, this page is made with Vuejs.",
-      year: 2023,
+      year: 2022,
       recommended: false,
       links:{
         hrefCode:"https://github.com/allencarlosdev/portfolio", titleCode:"code on github page portfolio",
