@@ -1,77 +1,77 @@
 export let skillsData = [
-    {
-      id:1,
-      title:"HTML",
-      image:require("@/assets/skill/html.svg"),
-    },
-    {
-      id:2,
-      title:"CSS",
-      image:require("@/assets/skill/css.svg"),
-    },
-    {
-      id:3,
-      title:"JAVASCRIPT",
-      image:require("@/assets/skill/javascript.svg"),
-    },
-    {
-      id:4,
-      title:"TYPESCRIPT",
-      image:require("@/assets/skill/typescript.svg"),
-    },
-    {
-      id:5,
-      title:"PHP",
-      image:require("@/assets/skill/php.svg"),
-    },
-    {
-      id:6,
-      title:"MYSQL",
-      image:require("@/assets/skill/mysql.svg"),
-    },
-    {
-      id:7,
-      title:"MONGODVB",
-      image:require("@/assets/skill/mongodb.svg"),
-    },
-    {
-      id:8,
-      title:"VUE",
-      image:require("@/assets/skill/vue.svg"),
-    },
-    {
-      id:9,
-      title:"BOOTSTRAP",
-      image:require("@/assets/skill/bootstrap.svg"),
-    },
-    {
-      id:10,
-      title:"LIVEWIRE",
-      image:require("@/assets/skill/livewire.svg"),
-    },
-    {
-      id:11,
-      title:"GIT",
-      image:require("@/assets/skill/git.svg"),
-    },
-    {
-      id:12,
-      title:"ALPINEJS",
-      image:require("@/assets/skill/alpinejs.svg"),
-    },
-    {
-      id:13,
-      title:"LARAVEL",
-      image:require("@/assets/skill/laravel.svg"),
-    },
-    {
-      id:14,
-      title:"TAILWINDCSS",
-      image:require("@/assets/skill/tailwind.svg"),
-    },
-    {
-      id:15,
-      title:"NODEJS",
-      image:require("@/assets/skill/nodejs.svg"),
-    },
-  ]
+  {
+    id: 1,
+    title: "HTML",
+    image: require("@/assets/skill/html.svg"),
+  },
+  {
+    id: 2,
+    title: "CSS",
+    image: require("@/assets/skill/css.svg"),
+  },
+  {
+    id: 3,
+    title: "JAVASCRIPT",
+    image: require("@/assets/skill/javascript.svg"),
+  },
+  {
+    id: 4,
+    title: "TYPESCRIPT",
+    image: require("@/assets/skill/typescript.svg"),
+  },
+  {
+    id: 5,
+    title: "PHP ",
+    image: require("@/assets/skill/php.svg"),
+  },
+  {
+    id: 6,
+    title: "MYSQL",
+    image: require("@/assets/skill/mysql.svg"),
+  },
+  {
+    id: 7,
+    title: "MONGODVB",
+    image: require("@/assets/skill/mongodb.svg"),
+  },
+  {
+    id: 8,
+    title: "VUE",
+    image: require("@/assets/skill/vue.svg"),
+  },
+  {
+    id: 9,
+    title: "BOOTSTRAP",
+    image: require("@/assets/skill/bootstrap.svg"),
+  },
+  {
+    id: 10,
+    title: "LIVEWIRE",
+    image: require("@/assets/skill/livewire.svg"),
+  },
+  {
+    id: 11,
+    title: "GIT",
+    image: require("@/assets/skill/git.svg"),
+  },
+  {
+    id: 12,
+    title: "ALPINEJS",
+    image: require("@/assets/skill/alpinejs.svg"),
+  },
+  {
+    id: 13,
+    title: "LARAVEL",
+    image: require("@/assets/skill/laravel.svg"),
+  },
+  {
+    id: 14,
+    title: "TAILWINDCSS",
+    image: require("@/assets/skill/tailwind.svg"),
+  },
+  {
+    id: 15,
+    title: "NODEJS",
+    image: require("@/assets/skill/nodejs.svg"),
+  },
+]
