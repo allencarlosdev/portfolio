@@ -21,7 +21,7 @@ export let skillsData = [
   },
   {
     id: 5,
-    title: "PHP ",
+    title: "PHP",
     image: require("@/assets/skill/php.svg"),
   },
   {
